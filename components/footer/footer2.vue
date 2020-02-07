@@ -15,7 +15,7 @@
                   </div>
                   <div class="footer-contant">
                     <div class="footer-logo">
-                      <img :src='"@/assets/images/icon/layout2/logo.png"' alt="logo">
+                      <img src='https://citywalk.co.ke/logo.png' alt="logo" style="width: 280px;">
                     </div>
                     <div class="social-white">
                       <ul>
@@ -76,11 +76,11 @@
                   </div>
                   <div class="footer-contant">
                     <ul class="contact-details">
-                      <li>{{shopName}}</li>
-                      <li>Call Us: {{shopNumber}}</li>
+                      <li>City Walk</li>
+                      <li>Call Us: 0714104504</li>
                       <li>
                         Email Us:
-                        <a href="#">{{shopEmail}}</a>
+                        <a href="#">citywalk@gmail.com</a>
                       </li>
                     </ul>
                   </div>
@@ -91,58 +91,6 @@
         </div>
       </section>
     </div>
-    <!-- <div class="white-layout box-layout">
-      <div class="container">
-        <section class="small-section">
-          <div class="row footer-theme2">
-            <div class="col">
-              <div class="footer-link link-white">
-                <div class="footer-title">
-                  <h4>my account</h4>
-                </div>
-                <div class="footer-contant">
-                  <ul>
-                    <li>
-                      <a href="#">mens</a>
-                    </li>
-                    <li>
-                      <a href="#">womens</a>
-                    </li>
-                    <li>
-                      <a href="#">clothing</a>
-                    </li>
-                    <li>
-                      <a href="#">accessories</a>
-                    </li>
-                    <li>
-                      <a href="#">featured</a>
-                    </li>
-                    <li>
-                      <a href="#">service</a>
-                    </li>
-                    <li>
-                      <a href="#">cart</a>
-                    </li>
-                    <li>
-                      <a href="#">my order</a>
-                    </li>
-                    <li>
-                      <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="#">new product</a>
-                    </li>
-                    <li>
-                      <a href="#">featured product</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div> -->
     <div class="sub-footer black-subfooter">
       <div class="container">
         <div class="row">
