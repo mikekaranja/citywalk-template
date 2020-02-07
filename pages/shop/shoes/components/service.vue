@@ -106,8 +106,8 @@
 export default {
   data() {
     return {
-      title_1: 'free delivery',
-      subtitle_1: 'free delivery to your doorstep',
+      title_1: 'delivery countrywide',
+      subtitle_1: 'delivery to your doorstep',
       title_2: '24 X 7 service',
       subtitle_2: 'services available any time of any day',
       title_3: 'great offers',

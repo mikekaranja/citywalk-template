@@ -7,15 +7,15 @@
           <div>
             <img
               alt
-              :src='"@/assets/images/icon/layout4/search.png"'
-              @click="openSearch()"
+              :src="&quot;@/assets/images/icon/layout4/search.png&quot;"
               class="img-fluid"
+              @click="openSearch()"
             >
-            <i class="ti-search" @click="openSearch()"></i>
+            <i class="ti-search" @click="openSearch()" style="color: white"/>
           </div>
           <div id="search-overlay" class="search-overlay" :class="{ opensearch:search }">
             <div>
-              <span class="closebtn" @click="closeSearch()" title="Close Overlay">×</span>
+              <span class="closebtn" title="Close Overlay" @click="closeSearch()">×</span>
               <div class="overlay-content">
                 <div class="container">
                   <div class="row">
@@ -23,29 +23,29 @@
                       <form>
                         <div class="form-group mb-0">
                           <input
+                            v-model="searchString"
                             type="text"
                             class="form-control"
-                            v-model="searchString"
-                            @keyup="searchProduct"
                             placeholder="Search a Product"
+                            @keyup="searchProduct"
                           >
                         </div>
                         <button type="submit" class="btn btn-primary">
-                          <i class="fa fa-search"></i>
+                          <i class="fa fa-search" style="color: white"/>
                         </button>
                       </form>
-                      <ul class="search-results" v-if="searchItems.length">
+                      <ul v-if="searchItems.length" class="search-results">
                         <li v-for="(product,index) in searchItems" :key="index" class="product-box">
                           <div class="img-wrapper">
                             <img
-                              :src='getImgUrl(product.images[0].src)'
-                              class="img-fluid bg-img"
                               :key="index"
-                            />
+                              :src="product.imageUrls[0]"
+                              class="img-fluid bg-img"
+                            >
                           </div>
                           <div class="product-detail">
                             <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
-                              <h6>{{ product.title }}</h6>
+                              <h6>{{ product.name }}</h6>
                             </nuxt-link>
                             <h4>{{ product.price * curr.curr | currency(curr.symbol) }}</h4>
                           </div>
@@ -60,13 +60,13 @@
         </li>
         <li class="onhover-div mobile-setting">
           <div>
-            <img alt :src='"@/assets/images/icon/layout4/setting.png"' class="img-fluid">
-            <i class="ti-settings"></i>
+            <img alt :src="&quot;@/assets/images/icon/layout4/setting.png&quot;" class="img-fluid">
+            <i class="ti-settings" style="color: white"/>
           </div>
           <div class="show-div setting">
             <h6>currency</h6>
             <ul class="list-inline">
-              <li>
+              <!-- <li>
                 <a href="javascript:void(0)" @click="updateCurrency('eur', '€')">eur</a>
               </li>
               <li>
@@ -74,40 +74,40 @@
               </li>
               <li>
                 <a href="javascript:void(0)" @click="updateCurrency('gbp', '£')">gbp</a>
-              </li>
+              </li> -->
               <li>
-                <a href="javascript:void(0)" @click="updateCurrency('usd', '$')">usd</a>
+                <a href="javascript:void(0)">Ksh</a>
               </li>
             </ul>
           </div>
         </li>
         <li class="onhover-div mobile-cart">
           <div>
-            <img alt :src='"@/assets/images/icon/layout4/cart.png"' class="img-fluid">
-            <i class="ti-shopping-cart"></i>
-            <span class="cart_qty_cls">{{cart.length}}</span>
+            <img alt :src="&quot;@/assets/images/icon/layout4/cart.png&quot;" class="img-fluid">
+            <i class="ti-shopping-cart" />
+            <span class="cart_qty_cls">{{ cart.length }}</span>
           </div>
-          <ul class="show-div shopping-cart" v-if="!cart.length">
+          <ul v-if="!cart.length" class="show-div shopping-cart">
             <li>Your cart is currently empty.</li>
           </ul>
-          <ul class="show-div shopping-cart" v-if="cart.length">
+          <ul v-if="cart.length" class="show-div shopping-cart">
             <li v-for="(item,index) in cart" :key="index">
               <div class="media">
                 <nuxt-link :to="{ path: '/product/sidebar/'+item.id}">
-                  <!-- <img alt class="mr-3" :src='getImgUrl(item.images[0].src)'> -->
+                  <!-- <img alt class="mr-3" :src="getImgUrl(item.images[0].src)"> -->
                 </nuxt-link>
                 <div class="media-body">
                   <nuxt-link :to="{ path: '/product/sidebar/'+item.id}">
-                    <h4>{{item.title}}</h4>
+                    <h4>{{ item.title }}</h4>
                   </nuxt-link>
                   <h4>
-                    <span>{{item.quantity}} x {{ item.price | currency }}</span>
+                    <span>{{ item.quantity }} x {{ item.price | currency }}</span>
                   </h4>
                 </div>
               </div>
               <div class="close-circle">
-                <a href="#" @click='removeCartItem(item)'>
-                  <i class="fa fa-times" aria-hidden="true"></i>
+                <a href="#" @click="removeCartItem(item)">
+                  <i class="fa fa-times" aria-hidden="true" />
                 </a>
               </div>
             </li>
@@ -148,7 +148,7 @@ export default {
   },
   computed: {
     ...mapState({
-      searchItems: state => state.products.searchProduct
+      searchItems: state => state.products.searchProducts
     }),
     ...mapGetters({
       cart: 'cart/cartItems',
@@ -167,7 +167,7 @@ export default {
       this.search = false
     },
     searchProduct() {
-      this.$store.dispatch('products/searchProduct', this.searchString)
+      this.$store.dispatch('products/searchProducts', this.searchString)
     },
     removeCartItem: function (product) {
       this.$store.dispatch('cart/removeCartItem', product)

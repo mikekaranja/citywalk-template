@@ -6,7 +6,7 @@
         <div class="toggle-nav" @click="openmobilenav=true">
           <i class="fa fa-bars sidebar-bar"></i>
         </div>
-        <ul class="nav-menu" :class="{ opennav: openmobilenav }" >
+        <ul class="nav-menu" :class="{ opennav: openmobilenav }" style="background: black;" >
           <li class="back-btn">
             <div class="mobile-back text-right">
               <span @click="openmobilenav=false">Back</span>
@@ -14,7 +14,7 @@
             </div>
           </li>
           <li v-for="(menuItem, index) in menulist" :key="index" :class="menuItem.megamenu ? 'mega-menu' : 'dropdown'">
-            <a href="#" class="nav-link" @click="setActive(menuItem.title)">
+            <a href="/shop/shoes" style="color:white;" class="nav-link" @click="setActive(menuItem.title)">
               {{menuItem.title}}
               <span class="sub-arrow" v-if="menuItem.children || menuItem.megamenu"></span>
             </a>

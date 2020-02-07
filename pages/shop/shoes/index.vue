@@ -13,6 +13,7 @@
   <CollectionTab :products="productslist" :cat="categorylist" @openQuickview="showQuickview" @openCompare="showCoampre" @openCart="showCart" />
   <!-- <Blog /> -->
   <Service />
+  <Instagram />
   <Footer />
   <quickviewModel :openModal="showquickviewmodel" :productData="quickviewproduct" />
   <compareModel :openCompare="showcomparemodal" :productData="comapreproduct" @closeCompare="closeCompareModal" />

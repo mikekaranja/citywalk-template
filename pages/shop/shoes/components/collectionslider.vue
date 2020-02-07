@@ -5,17 +5,17 @@
   <section  class="section-b-space">
     <div class="container">
       <div class="row multiple-slider">
-        <div class="col-lg-3 col-sm-6" v-for="(collection,index) in category" :key="index">
+        <div class="col-lg-3 col-sm-6" v-for="(collection,index) in cats" :key="index">
           <div class="theme-card">
-            <h5 class="title-border" style="white-space: nowrap; width: 76%; overflow: hidden; textOverflow: ellipsis;">{{collection.categoryname}}</h5>
+            <h5 class="title-border" style="white-space: nowrap; width: 76%; overflow: hidden; textOverflow: ellipsis;">{{collection}}</h5>
             <div class="offer-slider slide-1">
               <div v-swiper:[index]="swiperOption">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div>
-                      <div class="media" v-for="(product,index) in getCategoryProduct(collection.categoryname).splice(0,3)" :key="index">
+                      <div class="media" v-for="(product,index) in getCategoryProduct(collection).splice(0,3)" :key="index">
                         <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
-                          <img class="img-fluid" :src="product.imageUrls[0]" alt style="width: 110.8px; height: 160px; objectFit: cover;">
+                          <img class="img-fluid" :src="product.imageUrls[0]" alt style="width: 110.8px; height: 160px; objectFit: contain;">
                         </nuxt-link>
                         <div class="media-body align-self-center">
                           <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
@@ -30,11 +30,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide" v-if="getCategoryProduct(collection.categoryname).length >= 4">
+                  <div class="swiper-slide" v-if="getCategoryProduct(collection).length >= 4">
                     <div>
-                      <div class="media" v-for="(product, index) in getCategoryProduct(collection.categoryname).splice(3,3)" :key="index">
+                      <div class="media" v-for="(product, index) in getCategoryProduct(collection).splice(3,3)" :key="index">
                         <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
-                          <img class="img-fluid" :src="product.imageUrls[0]" alt>
+                          <img class="img-fluid" :src="product.imageUrls[0]" alt style="width: 110.8px; height: 160px; objectFit: contain;">
                         </nuxt-link>
                         <div class="media-body align-self-center">
                           <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
@@ -73,6 +73,7 @@ export default {
   props: ['products', 'cat'],
   data() {
     return {
+      cats: ["Men's shoes", "Fragrances", "Women's shoes", "NEW ARRIVALS"],
       swiperOption: {
         loop: false,
         navigation: {

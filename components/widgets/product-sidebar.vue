@@ -52,7 +52,7 @@
               />
             </svg>
             <div class="media-body">
-              <h4>free delivery</h4>
+              <h4>delivery countrywide</h4>
               <p>delivery of products tou your door step</p>
             </div>
           </div>
