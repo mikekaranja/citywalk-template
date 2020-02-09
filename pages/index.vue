@@ -12,7 +12,8 @@ export default {
   components: {
     Fashion
   },
-   async created() {
+  async created() {
+    this.$store.dispatch('layout/setLayoutVersion')
     try {
       const { data } = await axios.get(
         `https://e-merse.firebaseio.com/pwa/citywalk.json`

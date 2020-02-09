@@ -51,10 +51,10 @@
                   </div>
                 </div>
               <div class="swiper-button-prev" slot="button-prev">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                <i class="fa fa-angle-left" aria-hidden="true" style="color: white"></i>
               </div>
               <div class="swiper-button-next" slot="button-next">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <i class="fa fa-angle-right" aria-hidden="true" style="color: white"></i>
               </div>
               </div>
             </div>

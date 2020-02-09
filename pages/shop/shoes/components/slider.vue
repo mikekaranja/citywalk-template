@@ -37,11 +37,17 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   data() {
     return {
       swiperOption: {
+        slideSpeed: 5500,
         loop: true,
+        autoplay: {
+            delay: 5500,
+            disableOnInteraction: false
+          },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'

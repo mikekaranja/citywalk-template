@@ -16,9 +16,9 @@
                   </a>
                   <!-- <LeftSidebar :leftSidebarVal="leftSidebarVal" @closeVal="closeBarValFromChild" /> -->
                 </div>
-                <div class="brand-logo">
+                <div class="brand-logo" style="padding: 0">
                   <nuxt-link :to="{ path: '/shop/shoes'}">
-                <img src='https://citywalk.co.ke/logo.png' style="maxWidth: 180px;" class="img-fluid" alt>
+                <img src='https://citywalk.co.ke/logo.png' style="maxWidth: 240px;" class="img-fluid" alt>
               </nuxt-link>
                 </div>
               </div>
@@ -92,6 +92,11 @@ export default {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
+}
+@media (max-width: 480px) {
+  .brand-logo img {
+      height: 50px;
+  }
 }
 </style>
 

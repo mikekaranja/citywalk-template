@@ -14,7 +14,7 @@
             <div v-swiper:mySwiper="swiperOption">
               <div class="swiper-wrapper">
                 <div
-                  class="swiper-slide biiiil"
+                  class="swiper-slide"
                   v-for="(product,index) in products"
                   :key="index"
                 >
@@ -66,6 +66,12 @@ export default {
       dismissSecs: 5,
       dismissCountDown: 0,
       swiperOption: {
+        slideSpeed: 2000,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
         slidesPerView: 4,
         spaceBetween: 20,
         freeMode: false,

@@ -1,13 +1,13 @@
 <template>
   <div>
     <!-- theme setting -->
-    <div class="sidebar-btn dark-light-btn">
+    <!-- <div class="sidebar-btn dark-light-btn">
       <div class="dark-light">
         <div class="theme-layout-version" @click="customizeLayoutVersion()">
           {{ themeColor }}
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>

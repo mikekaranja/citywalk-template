@@ -60,8 +60,12 @@ export default {
       swiperOption: {
         dots: false,
         loop: true,
-        slideSpeed: 300,
+        slideSpeed: 200,
         slidesPerView: 7,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false
+        },
         breakpoints: {
           1367: {
             slidesPerView: 5,
