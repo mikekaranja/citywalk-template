@@ -1,10 +1,10 @@
 {
     "data": [
           {
-            "title": "Home", "type": "sub", "badgeValue": "new", "active": false
+            "title": "Home", "type": "sub", "badgeValue": "new", "active": false, "redirectTo": "/shop/shoes"
           },
           {
-            "title": "Categories", "type": "sub", "active": false, 
+            "title": "Categories", "type": "sub", "active": false, "redirectTo": "#",
             "children": [
               { "path": "/product/categories/Handbags", "title": "Handbags", "type": "link" },
               { "path": "/product/categories/Men's%20shoes", "title": "Mens's Shoes", "type": "link" },
@@ -16,13 +16,13 @@
             ]
           },
           {
-            "title": "Contact Us", "type": "sub", "active": false
+            "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/shop/shoes"
           },
           {
-            "title": "Our Stores", "type": "sub", "active": false
+            "title": "Our Stores", "type": "sub", "active": false, "redirectTo": "/shop/shoes"
           },
           {
-            "title": "Blog", "type": "sub", "active": false
+            "title": "Blog", "type": "sub", "active": false, "redirectTo": "/shop/shoes"
           }
         ]
   }
