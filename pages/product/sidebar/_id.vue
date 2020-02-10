@@ -192,6 +192,7 @@ export default {
     const products = this.$store.getters['products/returnProducts']
     if(products.length === 0) {
       this.$router.push("/shop/shoes");
+      return;
     }
     const singleProduct = products.filter(product => {
         return product.id === this.$route.params.id})

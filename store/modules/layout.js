@@ -25,7 +25,7 @@ const mutations = {
     setColor(state, payload)
   },
   setLayoutVersion: (state, payload) => {
-    document.body.classList.toggle('dark')
+    document.body.classList.add('dark')
     state.layout.config.layout_version = 'dark'
   }
 }

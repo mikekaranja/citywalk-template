@@ -97,7 +97,7 @@ const mutations = {
     state.prodDetailId = prod
   },
   SET_PRODUCTS(state, items) {
-    state.allProducts = items.slice(0, 30)
+    state.allProducts = items
     items.forEach(product => {
       if (state.fiveProducts.length < 7) {
         state.fiveProducts.push(product)

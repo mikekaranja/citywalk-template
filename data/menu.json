@@ -6,13 +6,13 @@
           {
             "title": "Categories", "type": "sub", "active": false, 
             "children": [
-              { "path": "#", "title": "Handbags", "type": "link" },
-              { "path": "#", "title": "Mens's Shoes", "type": "link" },
-              { "path": "#", "title": "Fragrances", "type": "link" },
-              { "path": "#", "title": "Brands", "type": "link" },
-              { "path": "#", "title": "Women's Shoes", "type": "link" },
-              { "path": "#", "title": "Kids", "type": "link" },
-              { "path": "#", "title": "SchoolBags", "type": "link" }
+              { "path": "/product/categories/Handbags", "title": "Handbags", "type": "link" },
+              { "path": "/product/categories/Men's%20shoes", "title": "Mens's Shoes", "type": "link" },
+              { "path": "/product/categories/Fragrances", "title": "Fragrances", "type": "link" },
+              { "path": "/product/categories/Brands", "title": "Brands", "type": "link" },
+              { "path": "/product/categories/Women's%20shoes", "title": "Women's Shoes", "type": "link" },
+              { "path": "/product/categories/kids", "title": "Kids", "type": "link" },
+              { "path": "/product/categories/School%20bags", "title": "SchoolBags", "type": "link" }
             ]
           },
           {
