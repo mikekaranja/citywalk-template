@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable -->
   <div class="top-header" style="background: #232323;">
     <div class="container">
       <div class="row">
@@ -18,20 +19,12 @@
 </template>
 
 <script>
+/* eslint-disable */
 import firebase from 'firebase'
-import UserAuth from '../../pages/page/account/auth/auth'
 export default {
   data() {
     return {
       isLogin: localStorage.getItem('userlogin')
-    }
-  },
-  methods: {
-    logout: function () {
-      firebase.auth().signOut().then(() => {
-        UserAuth.Logout()
-        this.$router.replace('/page/account/login-firebase')
-      })
     }
   }
 }

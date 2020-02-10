@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Fashion />
+    <Shoes />
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 import axios from 'axios';
-const Fashion = () => import('./shop/fashion')
+const Shoes = () => import('./shop/shoes')
 export default {
   components: {
-    Fashion
+    Shoes
   },
   async created() {
     this.$store.dispatch('layout/setLayoutVersion')
