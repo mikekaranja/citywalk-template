@@ -9,9 +9,9 @@
             <div class="main-menu">
               <div class="menu-left">
                 <div class="navbar">
-                  <a @click="left_sidebar">
+                  <a class="hide-nav" @click="left_sidebar">
                     <div class="bar-style">
-                      <!-- <i class="fa fa-bars sidebar-bar" aria-hidden="true"></i> -->
+                      <i aria-hidden="true" class="fa fa-angle-left" style="color: yellow; fontSize: 30px"></i>
                     </div>
                   </a>
                   <!-- <LeftSidebar :leftSidebarVal="leftSidebarVal" @closeVal="closeBarValFromChild" /> -->
@@ -68,7 +68,7 @@ export default {
       }
     },
     left_sidebar() {
-      this.leftSidebarVal = true
+      this.$router.back();
     },
     closeBarValFromChild(val) {
       this.leftSidebarVal = val
@@ -88,6 +88,9 @@ export default {
   top: 0;
   width: 100%;
 }
+.hide-nav {
+  display: none;
+}
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
@@ -96,6 +99,11 @@ export default {
 @media (max-width: 480px) {
   .brand-logo img {
       height: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .hide-nav {
+    display: block;
   }
 }
 </style>
