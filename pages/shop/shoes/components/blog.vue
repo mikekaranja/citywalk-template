@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable -->
   <!-- blog section -->
   <section class="blog blog-bg section-b-space ratio2_3">
     <div class="container">
@@ -17,7 +18,7 @@
                     <a href="#">
                       <div class="classic-effect">
                         <div>
-                          <img :src="getImgUrl(blog.images[0])" class="img-fluid" alt>
+                          <!-- <img :src="getImgUrl(blog.images[0])" class="img-fluid" alt> -->
                         </div>
                         <span></span>
                       </div>
@@ -43,6 +44,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import { mapState } from 'vuex'
 export default {
   data() {
@@ -72,11 +74,11 @@ export default {
   },
   computed: mapState({
     bloglist: state => state.blog.bloglist
-  }),
-  methods: {
-    getImgUrl(path) {
-      return require('@/assets/images/blog/' + path)
-    }
-  }
+  })
+  // methods: {
+  //   getImgUrl(path) {
+  //     return require('@/assets/images/blog/' + path)
+  //   }
+  // }
 }
 </script>

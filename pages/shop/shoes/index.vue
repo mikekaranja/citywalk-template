@@ -18,7 +18,7 @@
   <quickviewModel :openModal="showquickviewmodel" :productData="quickviewproduct" />
   <compareModel :openCompare="showcomparemodal" :productData="comapreproduct" @closeCompare="closeCompareModal" />
   <cartTopModel :openCart="showcartmodal" @closeCart="closeCart" />
-  <newsletterModel />
+  <!-- <newsletterModel /> -->
 </div>
 </template>
 <script>

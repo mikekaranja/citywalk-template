@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-xl-4">
                   <a href="#" class="mega-menu-banner">
-                    <img :src='"../../assets/images/mega-menu/fashion.jpg"' alt class="img-fluid">
+                    <!-- <img :src='"../../assets/images/mega-menu/fashion.jpg"' alt class="img-fluid"> -->
                   </a>
                 </div>
               </div>
