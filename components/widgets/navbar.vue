@@ -61,6 +61,9 @@
               </div>
             </div>
           </li>
+          <li>
+            <a href="http://blog.citywalk.co.ke">BLOG</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -4,7 +4,9 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _bab9696e = () => interopDefault(import('../pages/landing.vue' /* webpackChunkName: "pages/landing" */))
+const _1b2d89b2 = () => interopDefault(import('../pages/product/contact.vue' /* webpackChunkName: "pages/product/contact" */))
 const _06894e10 = () => interopDefault(import('../pages/shop/shoes/index.vue' /* webpackChunkName: "pages/shop/shoes/index" */))
+const _e72dfccc = () => interopDefault(import('../pages/page/account/checkout.vue' /* webpackChunkName: "pages/page/account/checkout" */))
 const _0e7d46f4 = () => interopDefault(import('../pages/shop/shoes/components/about.vue' /* webpackChunkName: "pages/shop/shoes/components/about" */))
 const _6f7d8c39 = () => interopDefault(import('../pages/shop/shoes/components/blog.vue' /* webpackChunkName: "pages/shop/shoes/components/blog" */))
 const _19adf780 = () => interopDefault(import('../pages/shop/shoes/components/brand.vue' /* webpackChunkName: "pages/shop/shoes/components/brand" */))
@@ -37,9 +39,17 @@ export const routerOptions = {
       component: _bab9696e,
       name: "landing"
     }, {
+      path: "/product/contact",
+      component: _1b2d89b2,
+      name: "product-contact"
+    }, {
       path: "/shop/shoes",
       component: _06894e10,
       name: "shop-shoes"
+    }, {
+      path: "/page/account/checkout",
+      component: _e72dfccc,
+      name: "page-account-checkout"
     }, {
       path: "/shop/shoes/components/about",
       component: _0e7d46f4,

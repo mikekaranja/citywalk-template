@@ -97,7 +97,7 @@
           <div class="col-xl-6 col-md-6 col-sm-12">
             <div class="footer-end">
               <p>
-                <i class="fa fa-copyright" aria-hidden="true"></i> <a href="e-merse.com" style="color: white;">Build by E-merse </a>
+                <i class="fa fa-copyright" aria-hidden="true"></i> <a href="e-merse.com" style="color: white;">Built by E-merse </a>
               </p>
             </div>
           </div>
@@ -116,17 +116,7 @@
                 </li>
                 <li>
                   <a href="#">
-                    <img :src='"@/assets/images/icon/paypal.png"' alt>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img :src='"@/assets/images/icon/american-express.png"' alt>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img :src='"@/assets/images/icon/discover.png"' alt>
+                    <img :src='"@/assets/images/icon/mpeza.png"' alt style="width: 28%">
                   </a>
                 </li>
               </ul>
