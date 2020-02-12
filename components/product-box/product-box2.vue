@@ -65,7 +65,7 @@
       <div class="rating">
       </div>
       <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
-        <h6>{{ product.name }}</h6>
+        <h6 style="white-space: nowrap; width: 100%; overflow: hidden; textOverflow: ellipsis;">{{ product.name }}</h6>
       </nuxt-link>
       <p>{{ product.description }}</p>
       <h4 v-if="product.sale">
