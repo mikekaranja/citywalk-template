@@ -1,4 +1,5 @@
 <template>
+    <!-- eslint-disable -->
     <div class="landingPage">
         <!--header start-->
         <header>
@@ -228,97 +229,97 @@
                                 <div class="row">
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/fashion' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/1.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/1.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>Fashion classic</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/tools' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/2.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/2.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>tools</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/gym' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/4.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/4.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>gym</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/jewellery' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/7.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/7.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>jewellery</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/pets' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/8.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/8.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>pets</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/fashion-2' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/11.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/11.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>Fashion Minimal</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/fashion-3' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/12.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/12.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>Fashion Modern</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/shoes' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/13.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/13.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>shoes</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/bags' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/14.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/14.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>bag</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/watch' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/15.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/15.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>watch</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/kids' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/16.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/16.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>kids</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/flower' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/17.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/17.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>flower</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/vegetables' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/19.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/19.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>vegetables</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/beauty' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/20.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/20.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>beauty</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/electronics-1' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/25.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/25.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>electronic classic</h3>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/shop/furniture' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/30.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/30.jpg" class="img-fluid "> -->
                                         </nuxt-link>
                                         <h3>furniture</h3>
                                     </div>
@@ -332,68 +333,68 @@
                                 <div class="row">
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/four-image' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/12.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/12.jpg" class="img-fluid "> -->
                                             <h3>4 image</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/bundle-product' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/13.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/13.jpg" class="img-fluid "> -->
                                             <h3>product bundle</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/three-column/thumbnail-left' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/1.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/1.jpg" class="img-fluid "> -->
                                             <h3>3 col left</h3>
                                         </nuxt-link>
 
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/three-column/thumbnail-right' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/2.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/2.jpg" class="img-fluid "> -->
                                             <h3>3 col right</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/three-column/thumbnail-bottom' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/3.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/3.jpg" class="img-fluid "> -->
                                             <h3>3 column</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/thumbnail-image/left-image' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/5.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/5.jpg" class="img-fluid "> -->
                                             <h3>left image</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/sidebar/1' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/6.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/6.jpg" class="img-fluid "> -->
                                             <h3>left sidebar</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: 'product/sidebar/no-sidebar' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/7.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/7.jpg" class="img-fluid "> -->
                                             <h3>no sidebar</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/thumbnail-image/right-image' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/8.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/8.jpg" class="img-fluid "> -->
                                             <h3>right image</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/thumbnail-image/image-outside' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/15.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/15.jpg" class="img-fluid "> -->
                                             <h3>image outside</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/product/sidebar/right-sidebar' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/product/9.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/product/9.jpg" class="img-fluid "> -->
                                             <h3>right sidebar</h3>
                                         </nuxt-link>
                                     </div>
@@ -407,55 +408,55 @@
                                 <div class="row">
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/metro' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/6.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/6.jpg" class="img-fluid "> -->
                                             <h3>metro</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/full-width' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/10.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/10.jpg" class="img-fluid "> -->
                                             <h3>full width</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/leftsidebar/all' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/1.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/1.jpg" class="img-fluid "> -->
                                             <h3>left sidebar</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/no-sidebar' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/2.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/2.jpg" class="img-fluid "> -->
                                             <h3>no sidebar</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/right-sidebar' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/3.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/3.jpg" class="img-fluid "> -->
                                             <h3>right sidebar</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/sidebar-popup' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/4.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/4.jpg" class="img-fluid "> -->
                                             <h3>sidebar popup</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/three-grid' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/7.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/7.jpg" class="img-fluid "> -->
                                             <h3>3 grid</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/six-grid' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/8.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/8.jpg" class="img-fluid "> -->
                                             <h3>6 grid</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/collection/list-view' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/shop/9.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/shop/9.jpg" class="img-fluid "> -->
                                             <h3>list view</h3>
                                         </nuxt-link>
                                     </div>
@@ -469,127 +470,127 @@
                                 <div class="row">
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/wishlist' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/1.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/1.jpg" class="img-fluid "> -->
                                             <h3>wishlist</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/cart' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/2.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/2.jpg" class="img-fluid "> -->
                                             <h3>cart</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/dashboard' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/3.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/3.jpg" class="img-fluid "> -->
                                             <h3>dashboard</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/login' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/4.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/4.jpg" class="img-fluid "> -->
                                             <h3>login</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/register' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/5.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/5.jpg" class="img-fluid "> -->
                                             <h3>register</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/contact' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/6.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/6.jpg" class="img-fluid "> -->
                                             <h3>contact us</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/forget-password' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/7.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/7.jpg" class="img-fluid "> -->
                                             <h3>forget password</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/profile' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/8.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/8.jpg" class="img-fluid "> -->
                                             <h3>profile</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/account/checkout' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/9.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/9.jpg" class="img-fluid "> -->
                                             <h3>checkout</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/about' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/10.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/10.jpg" class="img-fluid "> -->
                                             <h3>about us</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/search' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/11.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/11.jpg" class="img-fluid "> -->
                                             <h3>search</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/typography' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/12.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/12.jpg" class="img-fluid "> -->
                                             <h3>typography</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/review' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/13.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/13.jpg" class="img-fluid "> -->
                                             <h3>review</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/order-success' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/14.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/14.jpg" class="img-fluid "> -->
                                             <h3>order success</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/compare/compare-1' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/15.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/15.jpg" class="img-fluid "> -->
                                             <h3>compare 1</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/compare/compare-2' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/16.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/16.jpg" class="img-fluid "> -->
                                             <h3>compare 2</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/collection' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/17.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/17.jpg" class="img-fluid "> -->
                                             <h3>collection</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/lookbook' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/18.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/18.jpg" class="img-fluid "> -->
                                             <h3>lookbook</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/404' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/20.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/20.jpg" class="img-fluid "> -->
                                             <h3>404</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/coming-soon' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/21.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/21.jpg" class="img-fluid "> -->
                                             <h3>coming soon</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/page/faq' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/other/22.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/other/22.jpg" class="img-fluid "> -->
                                             <h3>FAQ</h3>
                                         </nuxt-link>
                                     </div>
@@ -603,25 +604,25 @@
                                 <div class="row">
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/blog/blog-detail' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/blog/1.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/blog/1.jpg" class="img-fluid "> -->
                                             <h3>blog deatils</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/blog/blog-nosidebar' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/blog/2.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/blog/2.jpg" class="img-fluid "> -->
                                             <h3>no sidebar</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/blog/blog-leftsidebar' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/blog/3.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/blog/3.jpg" class="img-fluid "> -->
                                             <h3>left sidebar</h3>
                                         </nuxt-link>
                                     </div>
                                     <div class="col-xl-3 col-sm-6 col-12 demo-box">
                                         <nuxt-link :to="{ path: '/blog/blog-rightsidebar' }" target="_blank">
-                                            <img src="../assets/images/landing-page/special features/blog/4.jpg" class="img-fluid ">
+                                            <!-- <img src="../assets/images/landing-page/special features/blog/4.jpg" class="img-fluid "> -->
                                             <h3>right sidebar</h3>
                                         </nuxt-link>
                                     </div>
@@ -666,7 +667,7 @@
                             <div class="feature-image">
                                 <img
                                         class="img-fluid w-100"
-                                        src="../assets/images/landing-page/special features/lookbook.png"
+                                        <!-- src="../assets/images/landing-page/special features/lookbook.png" -->
                                         alt="img"
                                 />
                             </div>
@@ -683,7 +684,7 @@
                                 <h6>10+ product hover</h6>
                             </div>
                             <div class="feature-image">
-                                <img class="img-fluid  w-100" src="../assets/images/landing-page/special features/hover.png" alt="img">
+                                <!-- <img class="img-fluid  w-100" src="../assets/images/landing-page/special features/hover.png" alt="img"> -->
                             </div>
                         </div>
                     </div>
@@ -700,7 +701,7 @@
                             <div class="feature-image">
                                 <img
                                         class="img-fluid w-100"
-                                        src="../assets/images/landing-page/special features/Off-canvas.png"
+                                        <!-- src="../assets/images/landing-page/special features/Off-canvas.png" -->
                                         alt="img"
                                 />
                             </div>
@@ -717,7 +718,7 @@
                                 <h6>Color Option</h6>
                             </div>
                             <div class="feature-image">
-                                <img class="img-fluid  w-100" src="../assets/images/landing-page/special features/color-option.png" alt="img">
+                                <!-- <img class="img-fluid  w-100" src="../assets/images/landing-page/special features/color-option.png" alt="img"> -->
                             </div>
                         </div>
                     </div>
@@ -732,7 +733,7 @@
                                 <h6>product filter</h6>
                             </div>
                             <div class="feature-image">
-                                <img class="img-fluid  w-100" src="../assets/images/landing-page/special features/product-filter.png" alt="img">
+                                <!-- <img class="img-fluid  w-100" src="../assets/images/landing-page/special features/product-filter.png" alt="img"> -->
                             </div>
                         </div>
                     </div>
@@ -749,7 +750,7 @@
                             <div class="feature-image">
                                 <img
                                         class="img-fluid w-100"
-                                        src="../assets/images/landing-page/special features/countdown.png"
+                                        <!-- src="../assets/images/landing-page/special features/countdown.png" -->
                                         alt="img"
                                 />
                             </div>
@@ -1076,6 +1077,7 @@
     </div>
 </template>
 <script>
+/* eslint-disable */
 export default {
   data() {
     return {
