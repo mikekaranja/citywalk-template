@@ -77,42 +77,42 @@
                             The
                             <span>BEST SELLING</span> Minimal Theme
                         </h3>
-                        <img src="../assets/images/landing-page/text.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/text.png" alt class="img-fluid" /> -->
                     </div>
                 </div>
                 <div class="home-decor">
                     <div class="decor-1 decor wow zoomIn" id="img-1">
-                        <img src="../assets/images/landing-page/slider/1.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/1.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-2 decor wow zoomIn" id="img-2">
-                        <img src="../assets/images/landing-page/slider/5.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/5.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-3 decor wow zoomIn" id="img-3">
-                        <img src="../assets/images/landing-page/slider/2.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/2.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-4 decor wow zoomIn" id="img-4">
-                        <img src="../assets/images/landing-page/slider/4.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/4.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-5 decor wow zoomIn" id="img-5">
-                        <img src="../assets/images/landing-page/slider/3.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/3.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-6 decor wow zoomIn" id="img-6">
-                        <img src="../assets/images/landing-page/slider/6.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/6.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-7 decor wow zoomIn" id="img-7">
-                        <img src="../assets/images/landing-page/slider/11.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/11.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-8 decor wow zoomIn" id="img-8">
-                        <img src="../assets/images/landing-page/slider/7.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/7.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-9 decor wow zoomIn" id="img-9">
-                        <img src="../assets/images/landing-page/slider/8.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/8.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-10 decor wow zoomIn" id="img-10">
-                        <img src="../assets/images/landing-page/slider/10.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/10.png" alt class="img-fluid" /> -->
                     </div>
                     <div class="decor-11 decor wow zoomIn" id="img-11">
-                        <img src="../assets/images/landing-page/slider/9.png" alt class="img-fluid" />
+                        <!-- <img src="../assets/images/landing-page/slider/9.png" alt class="img-fluid" /> -->
                     </div>
                 </div>
             </div>
