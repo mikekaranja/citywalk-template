@@ -665,11 +665,11 @@
                                 <h6>Attractive lookbook</h6>
                             </div>
                             <div class="feature-image">
-                                <img
+                                <!-- <img
                                         class="img-fluid w-100"
-                                        <!-- src="../assets/images/landing-page/special features/lookbook.png" -->
+                                        src="../assets/images/landing-page/special features/lookbook.png"
                                         alt="img"
-                                />
+                                /> -->
                             </div>
                         </div>
                     </div>
@@ -699,11 +699,11 @@
                                 <h6>off-canvas cart</h6>
                             </div>
                             <div class="feature-image">
-                                <img
+                                <!-- <img
                                         class="img-fluid w-100"
-                                        <!-- src="../assets/images/landing-page/special features/Off-canvas.png" -->
+                                        src="../assets/images/landing-page/special features/Off-canvas.png"
                                         alt="img"
-                                />
+                                /> -->
                             </div>
                         </div>
                     </div>
@@ -748,11 +748,11 @@
                                 <h6>Countdown</h6>
                             </div>
                             <div class="feature-image">
-                                <img
+                                <!-- <img
                                         class="img-fluid w-100"
-                                        <!-- src="../assets/images/landing-page/special features/countdown.png" -->
+                                        src="../assets/images/landing-page/special features/countdown.png"
                                         alt="img"
-                                />
+                                /> -->
                             </div>
                         </div>
                     </div>
