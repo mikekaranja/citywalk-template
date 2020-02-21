@@ -101,7 +101,7 @@
                         <li>Call Us: 0786400202</li>
                         <li>
                           Email Us:
-                          <a href="#">citywalk2019@gmail.com</a>
+                          <a href="#">digital@citywalk.co.ke</a>
                         </li>
                       </ul>
                     </div>

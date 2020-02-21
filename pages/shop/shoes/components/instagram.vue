@@ -4,17 +4,19 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="title-borderless"># instagram</h2>
+          <h2 class="title-borderless">
+            # instagram
+          </h2>
           <div class="slide-5 no-arrow slick-instagram">
             <div v-swiper:mySwiper="swiperOption">
               <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="(user, index) in instagram.slice(0,10)" :key="index">
+                <div v-for="(user, index) in instagram.slice(0,10)" :key="index" class="swiper-slide">
                   <div>
                     <a :href="user.link" target="_blank">
                       <div class="instagram-box">
                         <img :src="user.images.standard_resolution.url" alt="Avatar">
                         <div class="overlay">
-                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                          <i class="fa fa-instagram" aria-hidden="true" />
                         </div>
                       </div>
                     </a>
