@@ -3,7 +3,7 @@
 <div>
   <Header />
   <Slider />
-  <Category />
+  <!-- <Category /> -->
   <About />
   <CollectionBanner />
   <productSlider :products="returnFiveProducts" @openQuickview="showQuickview" @openCompare="showCoampre" @openCart="showCart" />
@@ -32,7 +32,7 @@ import compareModel from '../../../components/widgets/compare-popup'
 import cartTopModel from '../../../components/cart-model/cart-top-model'
 import newsletterModel from '../../../components/widgets/newsletter-popup'
 import Slider from './components/slider'
-import Category from './components/category'
+// import Category from './components/category'
 import About from './components/about'
 import CollectionBanner from './components/collectionbanner'
 import productSlider from './components/productSlider'

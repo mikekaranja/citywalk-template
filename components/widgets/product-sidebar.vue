@@ -98,7 +98,7 @@
               <p>you can reach us any time you desire</p>
             </div>
           </div>
-          <div class="media">
+          <!-- <div class="media">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -14 512.00001 512">
               <path
                 d="m136.964844 308.234375c4.78125-2.757813 6.417968-8.878906 3.660156-13.660156-2.761719-4.777344-8.878906-6.417969-13.660156-3.660157-4.78125 2.761719-6.421875 8.882813-3.660156 13.660157 2.757812 4.78125 8.878906 6.421875 13.660156 3.660156zm0 0"
@@ -129,7 +129,7 @@
               <h4>festival offer</h4>
               <p>special offers and much much more!</p>
             </div>
-          </div>
+          </div> -->
           <div class="media border-0 m-0">
             <svg
               id="Layer_1"

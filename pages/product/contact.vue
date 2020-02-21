@@ -17,7 +17,7 @@
               <ul>
                 <li>
                   <div class="contact-icon">
-                    <img :src="phoneimage" alt="Generic placeholder image">
+                    <img :src="phoneimage" alt="Generic placeholder image" />
                     <h6>Contact Us</h6>
                   </div>
                   <div class="media-body">
@@ -35,7 +35,7 @@
                 </li>
                 <li>
                   <div class="contact-icon">
-                    <img :src="emailimage" alt="Generic placeholder image">
+                    <img :src="emailimage" alt="Generic placeholder image" />
                     <h6>Email</h6>
                   </div>
                   <div class="media-body">
@@ -67,7 +67,7 @@
                     placeholder="First Name"
                     name="fname"
                     required
-                  >
+                  />
                 </div>
                 <div class="col-md-6">
                   <label for="lname">Last Name</label>
@@ -79,7 +79,7 @@
                     placeholder="Last Name"
                     name="lname"
                     required
-                  >
+                  />
                 </div>
                 <div class="col-md-6">
                   <label for="phone">Phone number</label>
@@ -91,7 +91,7 @@
                     placeholder="Enter your number"
                     name="phone"
                     required
-                  >
+                  />
                 </div>
                 <div class="col-md-6">
                   <label for="email">Email</label>
@@ -103,7 +103,7 @@
                     placeholder="Email"
                     name="email"
                     required
-                  >
+                  />
                 </div>
                 <div class="col-md-12">
                   <label for="message">Write Your Message</label>
@@ -121,7 +121,7 @@
                     type="submit"
                     class="btn btn-solid"
                     value="Send Your Message"
-                  >
+                  />
                 </div>
               </div>
             </form>
@@ -147,7 +147,7 @@ export default {
     return {
       phoneimage: require('@/assets/images/icon/phone.png'),
       emailimage: require('@/assets/images/icon/email.png'),
-      phone1: '0714104504',
+      phone1: '0786400202',
       phone2: '+86 163 - 451 - 7894',
       address: 'ABC Complex,Near xyz, New York <br /> USA 123456',
       email1: 'citywalk@gmail.com',
@@ -161,10 +161,10 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch('layout/setLayoutVersion')    
+    this.$store.dispatch('layout/setLayoutVersion')
   },
   methods: {
-    checkForm: function (e) {
+    checkForm: function(e) {
       this.errors = []
       if (!this.fname) {
         this.errors.push('First name required.')
@@ -186,7 +186,7 @@ export default {
       if (!this.errors.length) return true
       e.preventDefault()
     },
-    validEmail: function (email) {
+    validEmail: function(email) {
       const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       return re.test(email)
     }

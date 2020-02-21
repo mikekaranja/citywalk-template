@@ -19,7 +19,7 @@
             "title": "Contact Us", "type": "sub", "active": false, "redirectTo": "/product/contact"
           },
           {
-            "title": "Our Stores", "type": "sub", "active": false, "redirectTo": "/shop/shoes"
+            "title": "Our Stores", "type": "sub", "active": false, "redirectTo": "/shop/contact"
           }
         ]
   }

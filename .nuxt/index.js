@@ -12,10 +12,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_bootstrapvue_36ac9449 from 'nuxt_plugin_bootstrapvue_36ac9449' // Source: ./bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_c0df1fcc from 'nuxt_plugin_axios_c0df1fcc' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_plugin_03b7832e from 'nuxt_plugin_plugin_03b7832e' // Source: ../plugins/plugin.js (mode: 'client')
-import nuxt_plugin_localStorage_830ec59e from 'nuxt_plugin_localStorage_830ec59e' // Source: ../plugins/localStorage.js (mode: 'client')
+import nuxt_plugin_bootstrapvue_21738461 from 'nuxt_plugin_bootstrapvue_21738461' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_26160f9c from 'nuxt_plugin_axios_26160f9c' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_03b7832e from 'nuxt_plugin_plugin_03b7832e' // Source: ..\\plugins\\plugin.js (mode: 'client')
+import nuxt_plugin_localStorage_830ec59e from 'nuxt_plugin_localStorage_830ec59e' // Source: ..\\plugins\\localStorage.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -162,12 +162,12 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_bootstrapvue_36ac9449 === 'function') {
-    await nuxt_plugin_bootstrapvue_36ac9449(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_21738461 === 'function') {
+    await nuxt_plugin_bootstrapvue_21738461(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_c0df1fcc === 'function') {
-    await nuxt_plugin_axios_c0df1fcc(app.context, inject)
+  if (typeof nuxt_plugin_axios_26160f9c === 'function') {
+    await nuxt_plugin_axios_26160f9c(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_plugin_03b7832e === 'function') {

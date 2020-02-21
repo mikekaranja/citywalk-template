@@ -7,7 +7,7 @@
         <span v-if="product.sale" class="lable4">on sale</span>
       </div>
       <div class="front">
-        <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+        <nuxt-link :to="{ path: '/product/sidebar/' + product.id }">
           <img
             :id="product.id"
             :key="index"
@@ -20,10 +20,10 @@
       </div>
       <ul class="product-thumb-list">
         <li
-          v-for="(image,index) in product.images"
+          v-for="(image, index) in product.images"
           :key="index"
           class="grid_thumb_img"
-          :class="{active: imageSrc == image.src}"
+          :class="{ active: imageSrc == image.src }"
         >
           <a href="javascript:void(0);">
             <img :src="getImgUrl(image.src)" />
@@ -31,24 +31,20 @@
         </li>
       </ul>
       <div class="cart-info" style="color: white">
-        <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+        <nuxt-link :to="{ path: '/product/sidebar/' + product.id }">
           <button
-          v-b-modal.modal-cart
-          data-toggle="modal"
-          data-target="#addtocart"
-          title="Add to cart"
-          variant="primary"
-          @click="addToCart(product)"
-        >
-          <i class="ti-shopping-cart" style="color: white" />
-        </button>
-        </nuxt-link>        
+            v-b-modal.modal-cart
+            data-toggle="modal"
+            data-target="#addtocart"
+            title="Add to cart"
+            variant="primary"
+            @click="addToCart(product)"
+          >
+            <i class="ti-shopping-cart" style="color: white" />
+          </button>
+        </nuxt-link>
         <a href="javascript:void(0)" title="Wishlist">
-          <i
-            class="ti-heart"
-            aria-hidden="true"
-            style="color: white"
-          />
+          <i class="ti-heart" aria-hidden="true" style="color: white" />
         </a>
         <a
           v-b-modal.modal-lg
@@ -62,20 +58,29 @@
       </div>
     </div>
     <div class="product-detail">
-      <div class="rating">
-      </div>
-      <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
-        <h6 style="white-space: nowrap; width: 100%; overflow: hidden; textOverflow: ellipsis;">{{ product.name }}</h6>
+      <div class="rating"></div>
+      <nuxt-link :to="{ path: '/product/sidebar/' + product.id }">
+        <h6
+          style="white-space: nowrap; width: 100%; overflow: hidden; textOverflow: ellipsis;"
+        >
+          {{ product.name }}
+        </h6>
       </nuxt-link>
       <p>{{ product.description }}</p>
       <h4 v-if="product.sale">
-        {{ discountedPrice(product) * curr.curr | currency(curr.symbol) }}
-        <del>{{ product.price * curr.curr | currency(curr.symbol) }}</del>
+        {{ (discountedPrice(product) * curr.curr) | currency(curr.symbol) }}
+        <del>{{ (product.price * curr.curr) | currency(curr.symbol) }}</del>
       </h4>
-      <h4 v-else>{{ product.price * curr.curr | currency(curr.symbol) }}</h4>
+      <h4 v-else>{{ (product.price * curr.curr) | currency(curr.symbol) }}</h4>
       <div style="display: flex;margin-top:10px;">
-        <b-button pill variant="outline-success" class="whatsapp-btn" @click="openWhatsAppForm">
-          <i class="fa fa-whatsapp" aria-hidden="true"></i> Talk To Us
+        <b-button
+          pill
+          variant="outline-success"
+          class="whatsapp-btn"
+          @click="openWhatsAppForm"
+        >
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          Talk To Us
         </b-button>
       </div>
     </div>
@@ -84,12 +89,12 @@
 
 <script>
 /* eslint-disable */
-import { mapState, mapGetters } from "vuex";
+import { mapState, mapGetters } from 'vuex'
 export default {
-  props: ["product", "index"],
+  props: ['product', 'index'],
   data() {
     return {
-      imageSrc: "",
+      imageSrc: '',
       quickviewProduct: {},
       compareProduct: {},
       cartProduct: {},
@@ -97,19 +102,19 @@ export default {
       showCompareModal: false,
       cartval: false,
       variants: {
-        productId: "",
-        image: ""
+        productId: '',
+        image: ''
       },
       dismissSecs: 5,
       dismissCountDown: 0
-    };
+    }
   },
   computed: {
     ...mapState({
       productslist: state => state.products.productslist
     }),
     ...mapGetters({
-      curr: "products/changeCurrency"
+      curr: 'products/changeCurrency'
     })
   },
   methods: {
@@ -120,69 +125,65 @@ export default {
         price: this.product.price,
         image: this.product.imageUrls[0],
         quantity: 1
-      };
-      this.$store.dispatch("cart/addItemToCart", items);
-      this.$router.push("/page/account/checkout");
+      }
+      this.$store.dispatch('cart/addItemToCart', items)
+      this.$router.push('/page/account/checkout')
     },
     getImgUrl(path) {
-      return require("@/assets/images/" + path);
+      return require('@/assets/images/' + path)
     },
     addToCart: function(product) {
-      this.cartval = true;
-      this.cartProduct = product;
-      this.$emit("opencartmodel", this.cartval, this.cartProduct);
-      this.$store.dispatch("cart/addToCart", product);
+      this.cartval = true
+      this.cartProduct = product
+      this.$emit('opencartmodel', this.cartval, this.cartProduct)
+      this.$store.dispatch('cart/addToCart', product)
     },
     addToWishlist: function(product) {
-      this.dismissCountDown = this.dismissSecs;
-      this.$emit("showalert", this.dismissCountDown);
-      this.$store.dispatch("products/addToWishlist", product);
+      this.dismissCountDown = this.dismissSecs
+      this.$emit('showalert', this.dismissCountDown)
+      this.$store.dispatch('products/addToWishlist', product)
     },
     showQuickview: function(productData) {
-      this.showquickview = true;
-      this.quickviewProduct = productData;
-      this.$emit("openquickview", this.showquickview, this.quickviewProduct);
+      this.showquickview = true
+      this.quickviewProduct = productData
+      this.$emit('openquickview', this.showquickview, this.quickviewProduct)
     },
     addToCompare: function(product) {
-      this.showCompareModal = true;
-      this.compareProduct = product;
-      this.$emit(
-        "showCompareModal",
-        this.showCompareModal,
-        this.compareProduct
-      );
-      this.$store.dispatch("products/addToCompare", product);
+      this.showCompareModal = true
+      this.compareProduct = product
+      this.$emit('showCompareModal', this.showCompareModal, this.compareProduct)
+      this.$store.dispatch('products/addToCompare', product)
     },
     Color(variants) {
-      const uniqColor = [];
+      const uniqColor = []
       for (let i = 0; i < Object.keys(variants).length; i++) {
         if (uniqColor.indexOf(variants[i].color) === -1) {
-          uniqColor.push(variants[i].color);
+          uniqColor.push(variants[i].color)
         }
       }
-      return uniqColor;
+      return uniqColor
     },
     productColorchange(color, product) {
       product.variants.map(item => {
         if (item.color === color) {
           product.images.map(img => {
             if (img.image_id === item.image_id) {
-              this.imageSrc = img.src;
+              this.imageSrc = img.src
             }
-          });
+          })
         }
-      });
+      })
     },
     countDownChanged(dismissCountDown) {
-      this.dismissCountDown = dismissCountDown;
-      this.$emit("alertseconds", this.dismissCountDown);
+      this.dismissCountDown = dismissCountDown
+      this.$emit('alertseconds', this.dismissCountDown)
     },
     discountedPrice(product) {
-      const price = product.price - (product.price * product.discount) / 100;
-      return price;
+      const price = product.price - (product.price * product.discount) / 100
+      return price
     }
   }
-};
+}
 </script>
 
 <style scoped>

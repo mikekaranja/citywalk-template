@@ -32,9 +32,16 @@
                           <span class="validate-error">{{ errors[0] }}</span>
                         </ValidationProvider>
 
-                      <b-button type="submit" pill variant="outline-success" :disabled="invalid" class="whatsapp-btn" @click="openWhatsApp">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i> Talk To Us
-                      </b-button>
+                        <b-button
+                          type="submit"
+                          pill
+                          variant="outline-success"
+                          :disabled="invalid"
+                          class="whatsapp-btn"
+                          @click="openWhatsApp"
+                        >
+                          <i class="fa fa-whatsapp" aria-hidden="true" /> Talk To Us
+                        </b-button>
                       </div>
                     </div>
                   </div>
@@ -128,27 +135,8 @@ export default {
   },
   methods: {
     openWhatsApp() {
-      sendLead()
-      openWhatsApp()
-    },
-     sendLead() {
-      window.firebase
-        .database()
-        .ref(`pwa/leads`)
-        .push({
-          startedAt: window.firebase.database.ServerValue.TIMESTAMP,
-          shop: process.env.shopName,
-          shopemail: process.env.shopEmail,
-          image: this.cart.image,
-          item: this.cart.name,
-          name: this.user.firstName,
-          phone: this.user.phone
-        })
-    },
-
-    openWhatsApp() {
       window.open(
-        `https://wa.me/254${process.env.shopNumber}?text=Hi! My name is ${
+        `https://wa.me/254786400202?text=Hi! My name is ${
           this.user.firstName
         }. I am interested in this item ${this.cart.name}. Please get back to me.`,
         '_blank'
@@ -180,7 +168,7 @@ export default {
         }
       })
       handler.open({
-        name: 'Multikart ',
+        name: 'Citywalk ',
         description: 'Reach to your Dream',
         amount: this.cartTotal * 100
       })

@@ -1,0 +1,385 @@
+/**
+ * @license
+ * Copyright 2019 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+
+/**
+ * @license
+ * Copyright 2018 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*! @inotom/vue-go-top v1.1.0 inotom (http://www.serendip.ws/) | MIT */
+
+/*! @preserve sweet-scroll v3.0.1 - tsuyoshiwada | MIT License */
+
+/*!
+ * Vue.js v2.6.10
+ * (c) 2014-2019 Evan You
+ * Released under the MIT License.
+ */
+
+/**
+ * vuex v3.1.1
+ * (c) 2019 Evan You
+ * @license MIT
+ */
+
+/*!
+  * vue-router v3.0.7
+  * (c) 2019 Evan You
+  * @license MIT
+  */
+
+/*!
+ * getSize v2.0.3
+ * measure size of elements
+ * MIT license
+ */
+
+/*!
+ * vue-client-only v2.0.0
+ * (c) 2019-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * Masonry v4.2.2
+ * Cascading grid layout library
+ * https://masonry.desandro.com
+ * MIT License
+ * by David DeSandro
+ */
+
+/*!
+ * imagesLoaded v4.1.4
+ * JavaScript is all like "You images are done yet or what?"
+ * MIT License
+ */
+
+/*!
+ * vue-infinite-loading v2.4.4
+ * (c) 2016-2019 PeachScript
+ * MIT License
+ */
+
+/*!
+ * Vue-Lazyload.js v1.3.3
+ * (c) 2019 Awe <hilongjw@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--1!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProductZoomer.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************/
+
+/*! exports provided: default */
+
+/*! ../assets/drift-zoom/src/js/Drift.js */
+
+/*! ../assets/svg-icons/arrow-down-s-fill.svg */
+
+/*! ../assets/svg-icons/arrow-down-s-line.svg */
+
+/*! ../assets/svg-icons/arrow-left-s-fill.svg */
+
+/*! ../assets/svg-icons/arrow-left-s-line.svg */
+
+/*! ../assets/svg-icons/arrow-right-s-fill.svg */
+
+/*! ../assets/svg-icons/arrow-right-s-line.svg */
+
+/*! ../assets/svg-icons/arrow-up-s-fill.svg */
+
+/*! ../assets/svg-icons/arrow-up-s-line.svg */
+
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProductZoomer.vue?vue&type=style&index=0&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+
+/*! no static exports found */
+
+/*! ../../node_modules/css-loader/dist/runtime/api.js */
+
+/*! -!../../node_modules/css-loader/dist/cjs.js??ref--2-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../assets/drift-zoom/src/css/drift-basic.css */
+
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProductZoomer.vue?vue&type=style&index=1&id=d0dc3570&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./src/assets/drift-zoom/src/css/drift-basic.css ***!
+  \****************************************************************************************************************************************************************/
+
+/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */
+
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProductZoomer.vue?vue&type=template&id=d0dc3570&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+
+/*! exports provided: render, staticRenderFns */
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProductZoomer.vue?vue&type=style&index=0&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+
+/*! !../../node_modules/css-loader/dist/cjs.js??ref--2-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/vue-loader/lib??vue-loader-options!./ProductZoomer.vue?vue&type=style&index=0&lang=css& */
+
+/*! ../../node_modules/vue-style-loader/lib/addStylesClient.js */
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js??ref--2-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ProductZoomer.vue?vue&type=style&index=1&id=d0dc3570&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! !../../node_modules/css-loader/dist/cjs.js??ref--2-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/vue-loader/lib??vue-loader-options!./ProductZoomer.vue?vue&type=style&index=1&id=d0dc3570&scoped=true&lang=css& */
+
+/*!**************************************************************!*\
+  !*** ./node_modules/vue-style-loader/lib/addStylesClient.js ***!
+  \**************************************************************/
+
+/*! ./listToStyles */
+
+/*!***********************************************************!*\
+  !*** ./node_modules/vue-style-loader/lib/listToStyles.js ***!
+  \***********************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/assets/drift-zoom/src/js/BoundingBox.js ***!
+  \*****************************************************/
+
+/*! ./util/throwIfMissing */
+
+/*! ./util/dom */
+
+/*!***********************************************!*\
+  !*** ./src/assets/drift-zoom/src/js/Drift.js ***!
+  \***********************************************/
+
+/*! ./injectBaseStylesheet */
+
+/*! ./Trigger */
+
+/*! ./ZoomPane */
+
+/*!*************************************************!*\
+  !*** ./src/assets/drift-zoom/src/js/Trigger.js ***!
+  \*************************************************/
+
+/*! ./BoundingBox */
+
+/*!**************************************************!*\
+  !*** ./src/assets/drift-zoom/src/js/ZoomPane.js ***!
+  \**************************************************/
+
+/*!**************************************************************!*\
+  !*** ./src/assets/drift-zoom/src/js/injectBaseStylesheet.js ***!
+  \**************************************************************/
+
+/*!**************************************************!*\
+  !*** ./src/assets/drift-zoom/src/js/util/dom.js ***!
+  \**************************************************/
+
+/*! exports provided: isDOMElement, addClasses, removeClasses */
+
+/*!*************************************************************!*\
+  !*** ./src/assets/drift-zoom/src/js/util/throwIfMissing.js ***!
+  \*************************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-down-s-fill.svg ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-down-s-line.svg ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-left-s-fill.svg ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-left-s-line.svg ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-right-s-fill.svg ***!
+  \*****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-right-s-line.svg ***!
+  \*****************************************************/
+
+/*!**************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-up-s-fill.svg ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./src/assets/svg-icons/arrow-up-s-line.svg ***!
+  \**************************************************/
+
+/*!******************************************!*\
+  !*** ./src/components/ProductZoomer.vue ***!
+  \******************************************/
+
+/*! ./ProductZoomer.vue?vue&type=template&id=d0dc3570&scoped=true& */
+
+/*! ./ProductZoomer.vue?vue&type=script&lang=js& */
+
+/*! ./ProductZoomer.vue?vue&type=style&index=0&lang=css& */
+
+/*! ./ProductZoomer.vue?vue&type=style&index=1&id=d0dc3570&scoped=true&lang=css& */
+
+/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*!*******************************************************************!*\
+  !*** ./src/components/ProductZoomer.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+
+/*! -!../../node_modules/babel-loader/lib??ref--1!../../node_modules/vue-loader/lib??vue-loader-options!./ProductZoomer.vue?vue&type=script&lang=js& */
+
+/*!***************************************************************************!*\
+  !*** ./src/components/ProductZoomer.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************/
+
+/*! -!../../node_modules/vue-style-loader!../../node_modules/css-loader/dist/cjs.js??ref--2-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/vue-loader/lib??vue-loader-options!./ProductZoomer.vue?vue&type=style&index=0&lang=css& */
+
+/*!***************************************************************************************************!*\
+  !*** ./src/components/ProductZoomer.vue?vue&type=style&index=1&id=d0dc3570&scoped=true&lang=css& ***!
+  \***************************************************************************************************/
+
+/*! -!../../node_modules/vue-style-loader!../../node_modules/css-loader/dist/cjs.js??ref--2-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/vue-loader/lib??vue-loader-options!./ProductZoomer.vue?vue&type=style&index=1&id=d0dc3570&scoped=true&lang=css& */
+
+/*!*************************************************************************************!*\
+  !*** ./src/components/ProductZoomer.vue?vue&type=template&id=d0dc3570&scoped=true& ***!
+  \*************************************************************************************/
+
+/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./ProductZoomer.vue?vue&type=template&id=d0dc3570&scoped=true& */
+
+/*!************************!*\
+  !*** ./src/publish.js ***!
+  \************************/
+
+/*! ./components/ProductZoomer */
+
+/**!
+ * @fileOverview Kickass library to create and place poppers near their reference elements.
+ * @version 1.15.0
+ * @license
+ * Copyright (c) 2016 Federico Zivolo and contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+ * Outlayer v2.1.1
+ * the brains and guts of a layout library
+ * MIT license
+ */
+
+/*! 
+  * portal-vue © Thorsten Lünborg, 2019 
+  * 
+  * Version: 2.1.5
+  * 
+  * LICENCE: MIT 
+  * 
+  * https://github.com/linusborg/portal-vue
+  * 
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/**
+  * vee-validate v3.1.0
+  * (c) 2019 Abdelrahman Awad
+  * @license MIT
+  */

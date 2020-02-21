@@ -1,9 +1,9 @@
 <template>
   <div>
     <header>
-      <div class="mobile-fix-option"></div>
-      <TopBar/>
-      <div class="container" id="myHeader">
+      <div class="mobile-fix-option" />
+      <TopBar />
+      <div id="myHeader" class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="main-menu">
@@ -11,20 +11,20 @@
                 <div class="navbar">
                   <a class="hide-nav" @click="left_sidebar">
                     <div class="bar-style">
-                      <i aria-hidden="true" class="fa fa-angle-left" style="color: yellow; fontSize: 30px"></i>
+                      <i aria-hidden="true" class="fa fa-angle-left" style="color: yellow; fontSize: 30px" />
                     </div>
                   </a>
                   <!-- <LeftSidebar :leftSidebarVal="leftSidebarVal" @closeVal="closeBarValFromChild" /> -->
                 </div>
                 <div class="brand-logo" style="padding: 0">
                   <nuxt-link :to="{ path: '/shop/shoes'}">
-                <img src='https://citywalk.co.ke/logo.png' style="maxWidth: 240px;" class="img-fluid" alt>
-              </nuxt-link>
+                    <img src="/logo.png" style="maxWidth: 240px;" class="img-fluid" alt>
+                  </nuxt-link>
                 </div>
               </div>
               <div class="menu-right pull-right">
-                  <Nav/>
-                  <HeaderWidgets/>
+                <Nav />
+                <HeaderWidgets />
               </div>
             </div>
           </div>

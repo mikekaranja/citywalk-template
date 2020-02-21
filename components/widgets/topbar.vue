@@ -6,9 +6,10 @@
         <div class="col-lg-6">
           <div class="header-contact">
             <ul>
-              <li>Welcome to our store City Walk</li>
+              <li>Welcome to City Walk</li>
               <li>
-                <i class="fa fa-phone" aria-hidden="true"></i>Call Us:  0714104504
+                <i class="fa fa-phone" aria-hidden="true"></i>Call Us:
+                0786400202
               </li>
             </ul>
           </div>

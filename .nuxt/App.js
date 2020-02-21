@@ -3,20 +3,20 @@ import { getMatchedComponentsInstances, promisify, globalHandleError } from './u
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '..\\node_modules\\bootstrap\\dist\\css\\bootstrap.css'
 
-import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
+import '..\\node_modules\\bootstrap-vue\\dist\\bootstrap-vue.css'
 
-import '../assets/scss/app.scss'
+import '..\\assets\\scss\\app.scss'
 
-import '../node_modules/swiper/dist/css/swiper.css'
+import '..\\node_modules\\swiper\\dist\\css\\swiper.css'
 
-import _6f6c098b from '../layouts/default.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
 
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"Multikart Ecommerce | Vuejs shopping theme","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My awe-inspiring Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fmultikart\u002Ffavicon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Lato:300,400,700,900"}],"script":[{"src":"https:\u002F\u002Fcheckout.stripe.com\u002Fcheckout.js"}],"style":[]},
+  head: {"title":"Citywalk Kenya","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"property":"og:image","content":"https:\u002F\u002Fscontent.fnbo3-1.fna.fbcdn.net\u002Fv\u002Ft1.0-9\u002F49719514_1251452625004858_3587726254117224448_n.jpg?_nc_cat=111&_nc_ohc=Tw5NNMSRHPoAX9n6x9Z&_nc_ht=scontent.fnbo3-1.fna&oh=a2584b111b234451eda6a0f4e5622169&oe=5EB4C1CF"},{"hid":"description","name":"description","content":"Find a City Walk Store near you for the best value on shoes, sandals, boots, athletic shoes, and other footwear for men, women and kids!"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fcitycon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Lato:300,400,700,900"}],"script":[],"style":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })

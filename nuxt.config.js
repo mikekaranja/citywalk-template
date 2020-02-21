@@ -24,19 +24,18 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Multikart Ecommerce | Vuejs shopping theme',
+    title: 'Citywalk Kenya',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { property: 'og:image', content: 'https://scontent.fnbo3-1.fna.fbcdn.net/v/t1.0-9/49719514_1251452625004858_3587726254117224448_n.jpg?_nc_cat=111&_nc_ohc=Tw5NNMSRHPoAX9n6x9Z&_nc_ht=scontent.fnbo3-1.fna&oh=a2584b111b234451eda6a0f4e5622169&oe=5EB4C1CF' },
+      { hid: 'description', name: 'description', content: 'Find a City Walk Store near you for the best value on shoes, sandals, boots, athletic shoes, and other footwear for men, women and kids!' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/multikart/favicon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/citycon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' }
     ],
-    script: [
-      { src: 'https://checkout.stripe.com/checkout.js' }
-    ]
+    script: []
   },
 
   router: {
