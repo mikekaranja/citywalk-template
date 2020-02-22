@@ -5,20 +5,26 @@
       <div>
         <div v-swiper:mySwiper="swiperOption">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="(item, index) in items" :key="index">
+            <div v-for="(item, index) in items" :key="index" class="swiper-slide">
               <div
                 class="home text-center"
                 :class="item.alignclass"
-                v-bind:style="{ 'background-image': 'url(' + item.imagepath + ')' }"
+                :style="{ 'background-image': 'url(' + item.imagepath + ')' }"
               >
                 <div class="container">
                   <div class="row">
                     <div class="col">
                       <div class="slider-contain">
                         <div>
-                          <h4 style="color: white;">{{item.title}}</h4>
-                          <h1 style="color: white;">{{item.subtitle}}</h1>
-                          <p href="#" class="btn btn-solid black-btn">shop now</p>
+                          <h4 style="color: white;">
+                            {{ item.title }}
+                          </h4>
+                          <h1 style="color: white;">
+                            {{ item.subtitle }}
+                          </h1>
+                          <p href="#" class="btn btn-solid black-btn">
+                            shop now
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -27,8 +33,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev" slot="button-prev"></div>
-          <div class="swiper-button-next" slot="button-next"></div>
+          <div slot="button-prev" class="swiper-button-prev" />
+          <div slot="button-next" class="swiper-button-next" />
         </div>
       </div>
     </div>
@@ -55,21 +61,21 @@ export default {
       },
       items: [
         {
-          imagepath: require('@/assets/images/home-banner/shoes3.jpg'),
-          title: 'special offer',
-          subtitle: 'men\'s shoes',
+          imagepath: require('@/assets/images/home-banner/banner1.jpg'),
+          title: 'Welcome to citywalk',
+          subtitle: '',
           alignclass: 'p-left'
         },
         {
-          imagepath: require('@/assets/images/home-banner/shoes1.jpg'),
-          title: 'special offer',
-          subtitle: 'women\'s shoes',
+          imagepath: require('@/assets/images/home-banner/banner2.jpg'),
+          title: 'Shop for women\'s shoes',
+          subtitle: '',
           alignclass: 'p-left'
         },
         {
-          imagepath: require('@/assets/images/home-banner/shoes2.jpg'),
-          title: 'on sale',
-          subtitle: 'latest shoes',
+          imagepath: require('@/assets/images/home-banner/banner3.jpg'),
+          title: '',
+          subtitle: '',
           alignclass: 'p-left'
         }
       ]

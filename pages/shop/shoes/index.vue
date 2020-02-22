@@ -48,7 +48,7 @@ export default {
   components: {
     Header,
     Slider,
-    Category,
+    // Category,
     About,
     CollectionBanner,
     productSlider,
