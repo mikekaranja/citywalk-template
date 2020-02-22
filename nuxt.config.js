@@ -56,6 +56,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/vue-scrollto.js', ssr: false },
     { src: '~/plugins/plugin.js', ssr: false },
     { src: '~/plugins/localStorage.js', ssr: false }
   ],

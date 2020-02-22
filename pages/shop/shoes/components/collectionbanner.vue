@@ -3,7 +3,7 @@
   <section class="section-b-space p-t-0 ratio_40">
     <div class="container">
       <div class="row partition2">
-        <div class="col-md-6" v-for="(item, index) in items" :key="index">
+        <div v-for="(item, index) in items" id="element" :key="index" class="col-md-6">
           <div>
             <div class="collection-banner p-right text-center">
               <div class="img-part">
@@ -15,8 +15,12 @@
               </div>
               <div class="contain-banner">
                 <div>
-                  <h4 class="text-white">{{item.subtitle}}</h4>
-                  <h2 style="color: white;">{{item.title}}</h2>
+                  <h4 class="text-white">
+                    {{ item.subtitle }}
+                  </h4>
+                  <h2 style="color: white;">
+                    {{ item.title }}
+                  </h2>
                 </div>
               </div>
             </div>

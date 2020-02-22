@@ -22,7 +22,7 @@
                           <h1 style="color: white;">
                             {{ item.subtitle }}
                           </h1>
-                          <p href="#" class="btn btn-solid black-btn">
+                          <p id="black-btn" v-scroll-to="'#element'" class="btn btn-solid black-btn">
                             shop now
                           </p>
                         </div>
@@ -62,13 +62,13 @@ export default {
       items: [
         {
           imagepath: require('@/assets/images/home-banner/banner1.jpg'),
-          title: 'Welcome to citywalk',
+          title: '',
           subtitle: '',
           alignclass: 'p-left'
         },
         {
           imagepath: require('@/assets/images/home-banner/banner2.jpg'),
-          title: 'Shop for women\'s shoes',
+          title: '',
           subtitle: '',
           alignclass: 'p-left'
         },
@@ -80,6 +80,22 @@ export default {
         }
       ]
     }
+  },
+  method: {
+    scrollDown() {
+      window.scrollTo(0, 1000)
+    }
   }
 }
 </script>
+
+<style>
+#black-btn {
+  width: 388px;
+  cursor: pointer;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.slider-contain {
+  justify-content: center !important;
+}
+</style>
