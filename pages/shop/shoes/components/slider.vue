@@ -91,9 +91,11 @@ export default {
 
 <style>
 #black-btn {
-  width: 388px;
+  width: 150px;
   cursor: pointer;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  background-image: linear-gradient(30deg,#ff4c3b 50%,transparent 0);
+  border: 2px solid #ff4c3b;
 }
 .slider-contain {
   justify-content: center !important;
