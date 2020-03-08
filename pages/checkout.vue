@@ -116,9 +116,9 @@ import {
   ValidationObserver
 } from 'vee-validate/dist/vee-validate.full.esm'
 import { mapGetters } from 'vuex'
-import Header from '../../../components/header/header2'
-import Footer from '../../../components/footer/footer2'
-import Breadcrumbs from '../../../components/widgets/breadcrumbs'
+import Header from '../components/header/header2'
+import Footer from '../components/footer/footer2'
+import Breadcrumbs from '../components/widgets/breadcrumbs'
 export default {
   components: {
     Header,

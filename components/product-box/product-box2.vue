@@ -1,20 +1,26 @@
 <template>
   <!-- eslint-disable -->
-  <div>
+  <div id="product-comp">
     <div class="img-wrapper">
       <div class="lable-block">
         <span v-if="product.new" class="lable3">new</span>
         <span v-if="product.sale" class="lable4">on sale</span>
       </div>
       <div class="front">
-        <nuxt-link :to="{ path: '/product/sidebar/' + product.id }">
-          <img
-            :id="product.id"
+        <nuxt-link :to="{ path: '/product/sidebar/' + product.title }">
+          <!-- <img
+            :id="product.title"
             :key="index"
             :src="product.imageUrls[0]"
             class="img-fluid bg-img"
             :alt="product.name"
             style="width: 100%;height: 285px; objectFit: cover; border-radius: 7px;"
+          /> -->
+          <v-lazy-image
+            id="product-img"
+            class="img-fluid bg-img"
+            :src="product.imageUrls[0]"
+            :alt="product.name"
           />
         </nuxt-link>
       </div>
@@ -30,19 +36,19 @@
           </a>
         </li>
       </ul>
-      <div class="cart-info" style="color: white">
-        <nuxt-link :to="{ path: '/product/sidebar/' + product.id }">
-          <button
-            v-b-modal.modal-cart
-            data-toggle="modal"
-            data-target="#addtocart"
-            title="Add to cart"
-            variant="primary"
-            @click="addToCart(product)"
-          >
-            <i class="ti-shopping-cart" style="color: white" />
-          </button>
-        </nuxt-link>
+      <div class="cart-info cart-wrap" style="color: white">
+        <!-- <nuxt-link :to="{ path: '/product/sidebar/'+product.title}"> -->
+        <button
+          v-b-modal.modal-cart
+          data-toggle="modal"
+          data-target="#addtocart"
+          title="Add to cart"
+          variant="primary"
+          @click="addToCart(product)"
+        >
+          <i class="ti-shopping-cart" style="color: white" />
+        </button>
+        <!-- </nuxt-link>         -->
         <a href="javascript:void(0)" title="Wishlist">
           <i class="ti-heart" aria-hidden="true" style="color: white" />
         </a>
@@ -55,13 +61,24 @@
         >
           <i class="ti-search" aria-hidden="true" style="color: white" />
         </a>
+        <a
+          v-b-modal.modal-compare
+          href="javascript:void(0)"
+          title="Comapre"
+          variant="primary"
+        >
+          <i class="ti-reload" aria-hidden="true" style="color: white" />
+        </a>
       </div>
     </div>
     <div class="product-detail">
       <div class="rating"></div>
-      <nuxt-link :to="{ path: '/product/sidebar/' + product.id }">
+      <nuxt-link :to="{ path: '/product/sidebar/' + product.title }">
         <h6
-          style="white-space: nowrap; width: 100%; overflow: hidden; textOverflow: ellipsis;"
+          style="white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;"
         >
           {{ product.name }}
         </h6>
@@ -73,14 +90,24 @@
       </h4>
       <h4 v-else>{{ (product.price * curr.curr) | currency(curr.symbol) }}</h4>
       <div style="display: flex;margin-top:10px;">
+        <!-- <v-btn
+          style="width: 100%; marginTop: 7px; textTransform: capitalize; fontWeight: 700; fontSize: 12px"
+          dark
+          color="#25D366"
+          rounded
+          outlined
+          @click="openWhatsAppForm"
+        >
+          <v-icon left dark>mdi-whatsapp</v-icon>
+          Talk to Us
+        </v-btn>-->
         <b-button
           pill
           variant="outline-success"
           class="whatsapp-btn"
-          @click="openWhatsAppForm"
+          @click="openWhatsAppForm(product)"
         >
-          <i class="fa fa-whatsapp" aria-hidden="true"></i>
-          Talk To Us
+          <i class="fa fa-whatsapp" aria-hidden="true"></i> Talk To Us
         </b-button>
       </div>
     </div>
@@ -118,15 +145,9 @@ export default {
     })
   },
   methods: {
-    openWhatsAppForm() {
-      const items = {
-        name: this.product.name,
-        id: this.product.id,
-        price: this.product.price,
-        image: this.product.imageUrls[0],
-        quantity: 1
-      }
-      this.$store.dispatch('cart/addItemToCart', items)
+    openWhatsAppForm(product) {
+      product.quantity = 1
+      this.$store.dispatch('cart/addToCart', product)
       this.$router.push('/page/account/checkout')
     },
     getImgUrl(path) {
@@ -184,9 +205,26 @@ export default {
     }
   }
 }
+// style="width: 100%; marginTop: 7px; textTransform: capitalize; fontWeight: 700; fontSize: 12px"
 </script>
 
-<style scoped>
+<style>
+#product-comp {
+  margin-top: 12px;
+}
+.v-lazy-image {
+  filter: blur(10px);
+  transition: filter 0.7s;
+}
+.v-lazy-image-loaded {
+  filter: blur(0);
+}
+#product-img {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  border-radius: 5px;
+}
 .whatsapp-btn {
   width: 100%;
   font-size: 16px;
@@ -197,5 +235,13 @@ export default {
 .whatsapp-btn :hover {
   background: #48f748;
   color: white;
+}
+@media only screen and (max-width: 767px) {
+  #product-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
 }
 </style>

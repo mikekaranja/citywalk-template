@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable -->
   <div>
     <div class="icon-nav">
       <ul>
@@ -11,7 +10,7 @@
               class="img-fluid"
               @click="openSearch()"
             >
-            <i class="ti-search" @click="openSearch()" style="color: white"/>
+            <i class="ti-search" @click="openSearch()" />
           </div>
           <div id="search-overlay" class="search-overlay" :class="{ opensearch:search }">
             <div>
@@ -31,22 +30,22 @@
                           >
                         </div>
                         <button type="submit" class="btn btn-primary">
-                          <i class="fa fa-search" style="color: white"/>
+                          <i class="fa fa-search" />
                         </button>
                       </form>
                       <ul v-if="searchItems.length" class="search-results">
                         <li v-for="(product,index) in searchItems" :key="index" class="product-box">
                           <div class="img-wrapper">
-                            <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+                            <nuxt-link :to="{ path: '/product/sidebar/'+ product.title}">
                               <img
-                              :key="index"
-                              :src="product.imageUrls[0]"
-                              class="img-fluid bg-img"
-                            >
+                                :key="index"
+                                :src="product.imageUrls[0]"
+                                class="img-fluid bg-img"
+                              >
                             </nuxt-link>
                           </div>
                           <div class="product-detail">
-                            <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+                            <nuxt-link :to="{ path: '/product/sidebar/'+ product.title}">
                               <h6>{{ product.name }}</h6>
                             </nuxt-link>
                             <h4>{{ product.price * curr.curr | currency(curr.symbol) }}</h4>
@@ -63,7 +62,7 @@
         <li class="onhover-div mobile-setting">
           <div>
             <img alt :src="&quot;@/assets/images/icon/layout4/setting.png&quot;" class="img-fluid">
-            <i class="ti-settings" style="color: white"/>
+            <i class="ti-settings" />
           </div>
           <div class="show-div setting">
             <h6>currency</h6>
@@ -95,15 +94,15 @@
           <ul v-if="cart.length" class="show-div shopping-cart">
             <li v-for="(item,index) in cart" :key="index">
               <div class="media">
-                <nuxt-link :to="{ path: '/product/sidebar/'+item.id}">
-                  <!-- <img alt class="mr-3" :src="getImgUrl(item.images[0].src)"> -->
+                <nuxt-link :to="{ path: '/product/sidebar/'+ item.title}">
+                  <img id="cart-item-img" alt class="mr-3" :src="item.imageUrls[0]">
                 </nuxt-link>
                 <div class="media-body">
-                  <nuxt-link :to="{ path: '/product/sidebar/'+item.id}">
-                    <h4>{{ item.title }}</h4>
+                  <nuxt-link :to="{ path: '/product/sidebar/'+ item.title}">
+                    <h4>{{ item.name }}</h4>
                   </nuxt-link>
                   <h4>
-                    <span>{{ item.quantity }} x {{ item.price | currency }}</span>
+                    <span>{{ item.quantity }} x Ksh {{ item.price }}</span>
                   </h4>
                 </div>
               </div>
@@ -117,16 +116,16 @@
               <div class="total">
                 <h5>
                   subtotal :
-                  <span>{{ cartTotal | currency }}</span>
+                  <span>Ksh {{ cartTotal }}</span>
                 </h5>
               </div>
             </li>
             <li>
               <div class="buttons">
-                <nuxt-link :to="{ path: '/page/account/cart'}" :class="'view-cart'">
+                <!-- <nuxt-link :to="{ path: '/page/account/cart'}" :class="'view-cart'">
                   view cart
-                </nuxt-link>
-                <nuxt-link :to="{ path: '/page/account/checkout'}" :class="'checkout'">
+                </nuxt-link> -->
+                <nuxt-link :to="{ path: '/checkout'}" :class="'checkout'">
                   checkout
                 </nuxt-link>
               </div>
@@ -138,7 +137,6 @@
   </div>
 </template>
 <script>
-/* eslint-disable */
 import { mapState, mapGetters } from 'vuex'
 export default {
   data() {
@@ -150,10 +148,10 @@ export default {
   },
   computed: {
     ...mapState({
-      searchItems: state => state.products.searchProducts
+      searchItems: state => state.products.searchProducts,
+      cart: state => state.cart.cart
     }),
     ...mapGetters({
-      cart: 'cart/cartItems',
       cartTotal: 'cart/cartTotalAmount',
       curr: 'products/changeCurrency'
     })
@@ -181,3 +179,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#cart-item-img {
+  height: 62px;
+  width: 62px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+</style>

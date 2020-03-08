@@ -6,9 +6,10 @@
   <!-- <Category /> -->
   <About />
   <CollectionBanner />
-  <productSlider :products="returnFiveProducts" @openQuickview="showQuickview" @openCompare="showCoampre" @openCart="showCart" />
-  <Category2 />
+  <!-- <productSlider :products="returnFiveProducts" @openQuickview="showQuickview" @openCompare="showCoampre" @openCart="showCart" />
+   -->
   <CollectionSlider :products="productslist" :cat="categorylist" />
+  <Category2 />
   <Category3 />
   <CollectionTab :products="productslist" :cat="categorylist" @openQuickview="showQuickview" @openCompare="showCoampre" @openCart="showCart" />
   <!-- <Blog /> -->
@@ -91,24 +92,6 @@ export default {
     categorylist(){
       return this.$store.getters['products/returnCategories']
     }
-  },
-    async created() {
-      this.$store.dispatch('layout/setLayoutVersion')
-      try {
-        const { data } = await axios.get(
-          `https://e-merse.firebaseio.com/pwa/citywalk.json`
-        );
-        
-        const orderbydatearray = Object.values(data).sort((a, b) => {
-          return new Date(b.date_created) - new Date(a.date_created);
-        });
-        const categories = orderbydatearray.filter((el) => el.categoryname)
-        this.$store.dispatch('products/addCategories', categories)
-        const items = orderbydatearray.filter((el) => el.item)
-        this.$store.dispatch('products/addProducts', items)
-      } catch (err) {
-        console.log("===>", err);
-      }
   },
   mounted() {
     this.productsArray()

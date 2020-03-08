@@ -13,7 +13,7 @@
               <i class="fa fa-angle-right pl-2" aria-hidden="true" />
             </div>
           </li>
-          <li v-for="(menuItem, index) in menulist" :key="index" :class="menuItem.megamenu ? 'mega-menu' : 'dropdown'">
+          <li v-for="(menuItem, index) in menudata" :key="index" :class="menuItem.megamenu ? 'mega-menu' : 'dropdown'">
             <a :href="menuItem.redirectTo" style="color:white;" class="nav-link" @click="setActive(menuItem.title)">
               {{ menuItem.title }}
               <span v-if="menuItem.children || menuItem.megamenu" class="sub-arrow" />
@@ -79,7 +79,8 @@ export default {
       subnav: false,
       activeItem: 'home',
       activeChildItem: 'fashion 1',
-      activemegaChild: 'portfolio'
+      activemegaChild: 'portfolio',
+      menudata: []
     }
   },
   computed: {
@@ -87,7 +88,27 @@ export default {
       menulist: state => state.menu.data
     })
   },
+  mounted() {
+    this.getCategoriesNavLinks()
+  },
   methods: {
+    getCategoriesNavLinks: function () {
+      const menulist = [{
+        title: 'Home', type: 'sub', badgeValue: 'new', active: false, redirectTo: '/'
+      },
+      {
+        title: 'Categories',
+        type: 'sub',
+        active: false,
+        redirectTo: '#',
+        children: this.$store.state.products.categoriesNavLinks
+      },
+      {
+        title: 'Contact Us', type: 'sub', active: false, redirectTo: '/page/account/contact'
+      }]
+
+      this.menudata = menulist
+    },
     mobilenav: function () {
       this.openmobilenav = !this.openmobilenav
     },

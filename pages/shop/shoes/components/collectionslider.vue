@@ -14,11 +14,11 @@
                   <div class="swiper-slide">
                     <div>
                       <div class="media" v-for="(product,index) in getCategoryProduct(collection).splice(0,3)" :key="index">
-                        <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+                        <nuxt-link :to="{ path: '/product/sidebar/'+product.title}">
                           <img class="img-fluid" :src="product.imageUrls[0]" alt style="width: 110.8px; height: 160px; objectFit: contain;">
                         </nuxt-link>
                         <div class="media-body align-self-center">
-                          <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+                          <nuxt-link :to="{ path: '/product/sidebar/'+product.title}">
                             <h6 style="whiteSpace: nowrap; width: 90px; overflow: hidden; textOverflow: ellipsis;">{{product.name}}</h6>
                           </nuxt-link>
                           <h4 v-if="product.sale">
@@ -33,11 +33,11 @@
                   <div class="swiper-slide" v-if="getCategoryProduct(collection).length >= 4">
                     <div>
                       <div class="media" v-for="(product, index) in getCategoryProduct(collection).splice(3,3)" :key="index">
-                        <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+                        <nuxt-link :to="{ path: '/product/sidebar/'+product.title}">
                           <img class="img-fluid" :src="product.imageUrls[0]" alt style="width: 110.8px; height: 160px; objectFit: contain;">
                         </nuxt-link>
                         <div class="media-body align-self-center">
-                          <nuxt-link :to="{ path: '/product/sidebar/'+product.id}">
+                          <nuxt-link :to="{ path: '/product/sidebar/'+product.title}">
                             <h6 style="whiteSpace: nowrap; width: 90px; overflow: hidden; textOverflow: ellipsis;">{{product.name}}</h6>
                           </nuxt-link>
                           <h4 v-if="product.sale">
@@ -73,7 +73,7 @@ export default {
   props: ['products', 'cat'],
   data() {
     return {
-      cats: ["Men's shoes", "Fragrances", "Women's shoes", "NEW ARRIVALS"],
+      cats: ["NEW ARRIVALS", "Men's shoes", "Fragrances", "Women's shoes"],
       swiperOption: {
         loop: false,
         navigation: {

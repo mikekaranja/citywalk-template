@@ -3,10 +3,11 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _b82446f4 = () => interopDefault(import('..\\pages\\checkout.vue' /* webpackChunkName: "pages_checkout" */))
 const _969cf6f2 = () => interopDefault(import('..\\pages\\landing.vue' /* webpackChunkName: "pages_landing" */))
-const _d4197b5e = () => interopDefault(import('..\\pages\\product\\contact.vue' /* webpackChunkName: "pages_product_contact" */))
 const _1621f5a0 = () => interopDefault(import('..\\pages\\shop\\shoes\\index.vue' /* webpackChunkName: "pages_shop_shoes_index" */))
 const _0f408c34 = () => interopDefault(import('..\\pages\\page\\account\\checkout.vue' /* webpackChunkName: "pages_page_account_checkout" */))
+const _4a5fe4a2 = () => interopDefault(import('..\\pages\\page\\account\\contact.vue' /* webpackChunkName: "pages_page_account_contact" */))
 const _fbe49cf6 = () => interopDefault(import('..\\pages\\shop\\shoes\\components\\about.vue' /* webpackChunkName: "pages_shop_shoes_components_about" */))
 const _52e31b5a = () => interopDefault(import('..\\pages\\shop\\shoes\\components\\blog.vue' /* webpackChunkName: "pages_shop_shoes_components_blog" */))
 const _ba0b6702 = () => interopDefault(import('..\\pages\\shop\\shoes\\components\\brand.vue' /* webpackChunkName: "pages_shop_shoes_components_brand" */))
@@ -35,13 +36,13 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+      path: "/checkout",
+      component: _b82446f4,
+      name: "checkout"
+    }, {
       path: "/landing",
       component: _969cf6f2,
       name: "landing"
-    }, {
-      path: "/product/contact",
-      component: _d4197b5e,
-      name: "product-contact"
     }, {
       path: "/shop/shoes",
       component: _1621f5a0,
@@ -50,6 +51,10 @@ export const routerOptions = {
       path: "/page/account/checkout",
       component: _0f408c34,
       name: "page-account-checkout"
+    }, {
+      path: "/page/account/contact",
+      component: _4a5fe4a2,
+      name: "page-account-contact"
     }, {
       path: "/shop/shoes/components/about",
       component: _fbe49cf6,

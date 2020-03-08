@@ -5,7 +5,9 @@ import { VueMasonryPlugin } from 'vue-masonry'
 import InfiniteLoading from 'vue-infinite-loading'
 import VueLazyLoad from 'vue-lazyload'
 import ProductZoomer from 'vue-product-zoomer'
+import { VLazyImagePlugin } from 'v-lazy-image'
 
+Vue.use(VLazyImagePlugin)
 Vue.use(VueAwesomeSwiper)
 Vue.use(Vue2Filters)
 Vue.use(VueMasonryPlugin)

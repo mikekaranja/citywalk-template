@@ -187,6 +187,7 @@ export default {
 <style>
 .subscribe-white {
   padding-top: 59px;
+  background-color: #25D366 !important;
 }
 #whatsapp-icon {
   font-size: 60px;

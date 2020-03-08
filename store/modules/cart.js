@@ -25,18 +25,19 @@ const mutations = {
     state.whatsappItemCart = payload
   },
   addToCart: (state, payload) => {
-    const product = state.products.find(item => item.id === payload.id)
+    const product = payload
     const cartItems = state.cart.find(item => item.id === payload.id)
-    const qty = payload.quantity ? payload.quantity : 1
     if (cartItems) {
-      cartItems.quantity = qty
+      cartItems.quantity = cartItems.quantity + 1
+      console.log(cartItems)
+      const foundIndex = state.cart.findIndex(x => x.id === payload.id)
+      state.cart[foundIndex] = cartItems
     } else {
-      state.cart.push({
-        ...product,
-        quantity: qty
-      })
+      product.quantity = 1
+      console.log(product)
+      state.cart.push(product)
     }
-    product.stock--
+    // product.stock--
   },
   updateCartQuantity: (state, payload) => {
     // Calculate Product stock Counts

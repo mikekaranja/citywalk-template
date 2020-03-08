@@ -6,41 +6,14 @@
         <div class="col-12 product-related">
           <h2>{{ title }}</h2>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="product-4 product-m no-arrow">
-              <div v-swiper:mySwiper="swiperOption">
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide"
-                    v-for="(product,index) in productArray"
-                    :key="index"
-                  >
-                    <div class="product-box">
-                      <productBox2
-                        @opencartmodel="showCartModal"
-                        @showCompareModal="showcomparemodal"
-                        @openquickview="showquickview"
-                        @showalert="alert"
-                        @alertseconds="alert"
-                        :product="product"
-                        :index="index"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="row m-0">
+        <div class="row m-0">
           <div
-            v-for="(product,index) in productArray"
+            v-for="(product,index) in productArray.slice(0, 12)"
             :key="index"
             class="col-xl-2 col-md-4 col-sm-6"
           >
             <div class="product-box">
-              <productBox2
+              <productBox1
                 :product="product"
                 :index="index"
                 @opencartmodel="showCart"
@@ -51,7 +24,7 @@
               />
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
     <b-alert
@@ -71,13 +44,13 @@
 <script>
 /* eslint-disable */
 import { mapState } from 'vuex'
-import productBox2 from '../product-box/product-box2'
+import productBox1 from '../product-box/product-box2'
 // import cartModel from '../cart-model/cart-modal-popup'
 import quickviewModel from './quickview'
 import compareModel from './compare-popup'
 export default {
   components: {
-    productBox2,
+    productBox1,
     quickviewModel,
     compareModel,
     // cartModel
@@ -95,32 +68,7 @@ export default {
       comapreproduct: {},
       cartproduct: {},
       dismissSecs: 5,
-      dismissCountDown: 0,
-      swiperOption: {
-        slideSpeed: 2000,
-        loop: true,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false
-        },
-        slidesPerView: 4,
-        spaceBetween: 20,
-        freeMode: false,
-        breakpoints: {
-          1199: {
-            slidesPerView: 3,
-            spaceBetween: 20
-          },
-          991: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          420: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          }
-        }
-      }
+      dismissCountDown: 0
     }
   },
   computed: {
@@ -143,7 +91,9 @@ export default {
     }
   },
   created() {
-    this.productsArray()
+    setTimeout(() => {
+      this.productsArray()
+    }, 1200)
   },
   methods: {
     // relatedProducts() {

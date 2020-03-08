@@ -1,11 +1,12 @@
 /* eslint-disable */
 import products from '../../data/products'
-
+import axios from 'axios'
 const state = {
   // --------------
   fiveProducts: [],
   allProducts: [],
   categoryList: [],
+  categoriesNavLinks: [],
   prodCategory: '',
   prodDetailId: '',
   whatsappItem: '',
@@ -13,6 +14,7 @@ const state = {
   // --------------
   productslist: products.data,
   products: products.data,
+  productdetail: {},
   wishlist: [],
   compare: [],
   currency: {
@@ -107,6 +109,9 @@ const mutations = {
   SET_CATEGORIES(state, cat) {
     state.categoryList = cat
   },
+  SET_CATEGORIES_NAVLINKS(state, cat) {
+    state.categoriesNavLinks = cat
+  },
   changeCurrency: (state, payload) => {
     state.currency = payload
   },
@@ -166,6 +171,39 @@ const mutations = {
 }
 // actions
 const actions = {
+  loadData: async function(context, payload) {
+    await axios.get(`https://e-merse.firebaseio.com/pwa/products.json?orderBy=%22shopid%22&equalTo=%22${payload}%22`).then(
+      response => {
+        const orderbydatearray = Object.values(response.data).sort((a, b) => {
+          return new Date(b.date_created) - new Date(a.date_created)
+        })
+        const items = orderbydatearray.filter(el => el.item)
+        const categories = orderbydatearray.filter(el => el.categoryname)
+        console.log(categories)
+        context.commit('SET_PRODUCTS', items)
+        context.commit('SET_CATEGORIES', categories)
+        // set cateory nav links
+        let categoriesarray = []
+        state.categoryList.map(category => {
+          let categorylink = {
+            path: `/product/categories/${category.categoryname}`, 
+            title: category.categoryname, 
+            type: 'link'
+          }
+          categoriesarray.push(categorylink) 
+        })
+        context.commit('SET_CATEGORIES_NAVLINKS', categoriesarray)
+        return true
+      },
+      err => {
+        console.log(err)
+        return false
+      }
+    )
+  },
+  setCategoriesLinks(context, payload) {
+    context.commit('SET_CATEGORIES_NAVLINKS', payload)
+  },
   addItemToCart: (context, payload) => {
     context.commit('SET_WHATSAPP_FORM', payload)
   },
