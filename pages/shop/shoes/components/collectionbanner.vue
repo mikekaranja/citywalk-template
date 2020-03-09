@@ -40,12 +40,12 @@ export default {
         {
           imagepath: require('@/assets/images/home-banner/menshoes.jpg'),
           title: 'men',
-          subtitle: '50% off'
+          subtitle: ''
         },
         {
           imagepath: require('@/assets/images/home-banner/womenshoes.jpg'),
           title: 'women',
-          subtitle: '20% save'
+          subtitle: ''
         }
       ]
     }

@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import { getMatchedComponentsInstances, promisify, globalHandleError } from './utils'
 import NuxtLoading from './components/nuxt-loading.vue'
-import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '..\\node_modules\\bootstrap\\dist\\css\\bootstrap.css'
 
@@ -16,7 +15,7 @@ import _6f6c098b from '..\\layouts\\default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"Citywalk Kenya","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"property":"og:image","content":"https:\u002F\u002Fscontent.fnbo3-1.fna.fbcdn.net\u002Fv\u002Ft1.0-9\u002F49719514_1251452625004858_3587726254117224448_n.jpg?_nc_cat=111&_nc_ohc=Tw5NNMSRHPoAX9n6x9Z&_nc_ht=scontent.fnbo3-1.fna&oh=a2584b111b234451eda6a0f4e5622169&oe=5EB4C1CF"},{"hid":"description","name":"description","content":"Find a City Walk Store near you for the best value on shoes, sandals, boots, athletic shoes, and other footwear for men, women and kids!"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fcitycon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Lato:300,400,700,900"}],"script":[],"style":[],"titleChunk":"Citywalk Kenya","__dangerouslyDisableSanitizers":[]},
+  head: {"title":"Citywalk Kenya","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"property":"og:image","content":"https:\u002F\u002Fscontent.fnbo3-1.fna.fbcdn.net\u002Fv\u002Ft1.0-9\u002F49719514_1251452625004858_3587726254117224448_n.jpg?_nc_cat=111&_nc_ohc=Tw5NNMSRHPoAX9n6x9Z&_nc_ht=scontent.fnbo3-1.fna&oh=a2584b111b234451eda6a0f4e5622169&oe=5EB4C1CF"},{"hid":"description","name":"description","content":"Find a City Walk Store near you for the best value on shoes, sandals, boots, athletic shoes, and other footwear for men, women and kids!"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fcitycon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Lato:300,400,700,900"}],"script":[],"style":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
@@ -47,7 +46,7 @@ export default {
       domProps: {
         id: '__nuxt'
       }
-    }, [loadingEl, h(NuxtBuildIndicator), transitionEl])
+    }, [loadingEl, transitionEl])
   },
   data: () => ({
     isOnline: true,
@@ -142,8 +141,6 @@ export default {
     },
 
     setLayout(layout) {
-      if(layout && typeof layout !== 'string') throw new Error('[nuxt] Avoid using non-string value as layout property.')
-
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }

@@ -35,7 +35,9 @@
                     <h6>Contact Us</h6>
                   </div>
                   <div class="media-body">
-                    <p>{{ phone1 }}</p>
+                    <a :href="`tel:${phone1}`">
+                      <p>+254{{ phone1 }}</p>
+                    </a>
                   </div>
                 </li>
                 <li>
@@ -53,7 +55,9 @@
                     <h6>Email</h6>
                   </div>
                   <div class="media-body">
-                    <p>{{ email1 }}</p>
+                    <a :href="`mailto:${email1}`">
+                      <p>{{ email1 }}</p>
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -161,8 +165,8 @@ export default {
     return {
       phoneimage: require('@/assets/images/icon/phone.png'),
       emailimage: require('@/assets/images/icon/email.png'),
-      phone1: '0786400202',
-      phone2: '0786400202',
+      phone1: '786400202',
+      phone2: '786400202',
       address: 'Woodvale Grove, Nairobi',
       email1: 'digital@citywalk.co.ke',
       email2: 'digital@citywalk.co.ke',

@@ -8,8 +8,7 @@
             <ul>
               <li>Welcome to City Walk</li>
               <li>
-                <i class="fa fa-phone" aria-hidden="true"></i>Call Us:
-                0786400202
+                <a style="color: inherit;" :href="`tel:+254786400202`"><i class="fa fa-phone" aria-hidden="true"></i>Call Us:  +254786400202</a>
               </li>
             </ul>
           </div>
