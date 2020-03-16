@@ -13,12 +13,12 @@
                   alt
                 >
               </div>
-              <div class="contain-banner">
+              <div class="contain-banner" @click="imagePath(item.link)">
                 <div>
-                  <h4 class="text-white">
+                  <!-- <h4 class="text-black">
                     {{ item.subtitle }}
-                  </h4>
-                  <h2 style="color: white;">
+                  </h4> -->
+                  <h2 style="color: black;">
                     {{ item.title }}
                   </h2>
                 </div>
@@ -38,16 +38,21 @@ export default {
     return {
       items: [
         {
-          imagepath: require('@/assets/images/home-banner/menshoes.jpg'),
-          title: 'men',
-          subtitle: ''
+          imagepath: require('@/assets/images/home-banner/Men 540 x 360-min.jpg'),
+          title: 'Men\'s',
+          link: '/product/categories/Men\'s%20shoes'
         },
         {
-          imagepath: require('@/assets/images/home-banner/womenshoes.jpg'),
-          title: 'women',
-          subtitle: ''
+          imagepath: require('@/assets/images/home-banner/Women 540 x 360-min.jpg'),
+          title: 'Women\'s',
+          link: '/product/categories/Women\'s%20shoes'
         }
       ]
+    }
+  },
+  methods: {
+    imagePath(title) {
+      this.$router.push(title)
     }
   }
 }

@@ -87,36 +87,13 @@ export default {
       dismissCountDown: 0
     }
   },
-  async fetch({ store }) {
+  async fetch({ store, params }) {
     const products = store.getters['products/returnProducts']
+    
     if (process.browser && products.length === 0) {
       store.dispatch('layout/setLayoutVersion')
-      try {
-        const { data } = await axios.get(
-          `https://e-merse.firebaseio.com/pwa/products.json?orderBy=%22shopid%22&equalTo=%22citywalk-limited%22`
-        )
-
-        const orderbydatearray = Object.values(data).sort((a, b) => {
-          return new Date(b.date_created) - new Date(a.date_created)
-        })
-        const categories = orderbydatearray.filter(el => el.categoryname)
-        store.dispatch('products/addCategories', categories)
-        const items = orderbydatearray.filter(el => el.item)
-        store.dispatch('products/addProducts', items)
-        // set cateory nav links
-        let categoriesarray = []
-        categories.map(category => {
-          let categorylink = {
-            path: `/product/categories/${category.categoryname}`,
-            title: category.categoryname,
-            type: 'link'
-          }
-          categoriesarray.push(categorylink)
-        })
-        store.dispatch('products/setCategoriesLinks', categoriesarray)
-      } catch (err) {
-        console.log('===>', err)
-      }
+      const shopid = 'citywalk-limited'
+      return store.dispatch('products/loadData', shopid)
     }
   },
   computed: {

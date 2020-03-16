@@ -7,7 +7,7 @@ export default {
     shopID: 'chessa-creations',
     shopName: 'chessa',
     shopDescription: 'Authentic ankara wear for ladies and men.',
-    shopNumber: '704233752',
+    shopNumber: '786400202',
     shopEmail: 'chessacreations@gmail.com',
     facebookPage: 'https://www.facebook.com/ChessaCreations/',
     twitterPage: '',

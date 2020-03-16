@@ -138,7 +138,7 @@ export async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"shopURL":"https://www.chessa.co.ke/","shopNAME":"Chessa Creations","shopID":"chessa-creations","shopName":"chessa","shopDescription":"Authentic ankara wear for ladies and men.","shopNumber":"704233752","shopEmail":"chessacreations@gmail.com","facebookPage":"https://www.facebook.com/ChessaCreations/","twitterPage":"","instagramPage":""}
+      env: {"shopURL":"https://www.chessa.co.ke/","shopNAME":"Chessa Creations","shopID":"chessa-creations","shopName":"chessa","shopDescription":"Authentic ankara wear for ladies and men.","shopNumber":"786400202","shopEmail":"chessacreations@gmail.com","facebookPage":"https://www.facebook.com/ChessaCreations/","twitterPage":"","instagramPage":""}
     }
     // Only set once
     if (context.req) {

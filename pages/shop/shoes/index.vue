@@ -10,7 +10,7 @@
    -->
   <CollectionSlider :products="productslist" :cat="categorylist" />
   <Category2 />
-  <Category3 />
+  <!-- <Category3 /> -->
   <CollectionTab :products="productslist" :cat="categorylist" @openQuickview="showQuickview" @openCompare="showCoampre" @openCart="showCart" />
   <!-- <Blog /> -->
   <Service />
