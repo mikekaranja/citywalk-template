@@ -162,48 +162,56 @@ export default {
   },
   methods: {
     openWhatsApp() {
-      sendLead()
-      openWhatsApp()
+      this.sendLead();
+      this.sendWhatsApp();
     },
     sendLead() {
-      // window.firebase
-      //   .database()
-      //   .ref(`pwa/leads`)
-      //   .push({
-      //     startedAt: window.firebase.database.ServerValue.TIMESTAMP,
-      //     shop: process.env.shopName,
-      //     shopemail: process.env.shopEmail,
-      //     image: this.cart.image,
-      //     item: this.cart.name,
-      //     name: this.user.firstName,
-      //     phone: this.user.phone
-      //   });
+      window.firebase
+        .database()
+        .ref(`pwa/leads`)
+        .push({
+          startedAt: window.firebase.database.ServerValue.TIMESTAMP,
+          shop: process.env.shopName,
+          shopemail: process.env.shopEmail,
+          image: this.cart.length > 0 ? this.cart[0].imageUrls[0] : "",
+          item:
+            this.cart.length > 0
+              ? `${this.cart[0].name}, Ksh ${this.cart[0].price}`
+              : "Enquiry",
+          name: this.user.firstName,
+          phone: this.user.phone,
+        });
     },
-
-    openWhatsApp() {
-      // window.open(
-      //   `https://wa.me/254${process.env.shopNumber}?text=Hi! My name is ${this.user.firstName}. I am interested in this item ${this.cart.name}. Please get back to me.`,
-      //   "_blank"
-      // );
-      if (this.cart.length > 1) {
-        // if cart items are more than one
-        // eslint-disable-next-line prefer-const
-        let names = []
-        this.cart.map(item => {
-          names.push(item.name)
-        })
-        window.open(
-          `https://wa.me/254${process.env.shopNumber}?text=Hi! My name is ${
-            this.user.firstName
-          }. I am interested in these items ${names.join()}. Please get back to me.`,
-          '_blank'
-        )
+    sendWhatsApp() {
+      let phone = process.env.shopNumber;
+      phone = phone.substring(1);
+      if (this.cart.length > 0) {
+        if (this.cart.length > 1) {
+          // if cart items are more than one
+          // eslint-disable-next-line prefer-const
+          let names = [];
+          this.cart.map((item) => {
+            names.push(item.name);
+          });
+          window.open(
+            `https://wa.me/254${phone}?text=Hi! My name is ${
+              this.user.firstName
+            }. I am interested in these items ${names.join()}. Please get back to me.`,
+            "_blank"
+          );
+        } else {
+          // if one item in cart
+          window.open(
+            `https://wa.me/254${phone}?text=Hi! My name is ${this.user.firstName}. I am interested in this item ${this.cart[0].name}. Please get back to me. https://e-merse.com/viewlink?text=${this.cart[0].id}`,
+            "_blank"
+          );
+        }
       } else {
-        // if one item in cart
+        // no items selected
         window.open(
-          `https://wa.me/254${process.env.shopNumber}?text=Hi! My name is ${this.user.firstName}. I am interested in this item ${this.cart[0].name}. Please get back to me. https://e-merse.com/viewlink?text=${this.cart[0].id}`,
-          '_blank'
-        )
+          `https://wa.me/254${phone}?text=Hi! I am interested in your shop items. Please get back to me.`,
+          "_blank"
+        );
       }
     },
     order() {

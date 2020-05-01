@@ -2,14 +2,14 @@
 export default {
   mode: 'spa',
   env: {
-    shopURL: 'https://www.chessa.co.ke/',
-    shopNAME: 'Chessa Creations',
-    shopID: 'chessa-creations',
-    shopName: 'chessa',
-    shopDescription: 'Authentic ankara wear for ladies and men.',
-    shopNumber: '786400202',
-    shopEmail: 'chessacreations@gmail.com',
-    facebookPage: 'https://www.facebook.com/ChessaCreations/',
+    shopURL: 'https://www.citywalk.co.ke/',
+    shopNAME: '',
+    shopID: 'citywalk-limited',
+    shopName: 'citywalk limited',
+    shopDescription: '',
+    shopNumber: '0786400202',
+    shopEmail: 'davidk@citywalk.co.ke',
+    facebookPage: '',
     twitterPage: '',
     instagramPage: ''
   },
@@ -29,7 +29,14 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/citycon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' }
     ],
-    script: []
+    script: [
+      {
+        src: 'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js'
+      },
+      {
+        src: 'https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js'
+      }
+    ]
   },
 
   router: {

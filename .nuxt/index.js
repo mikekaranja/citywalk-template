@@ -12,13 +12,13 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_bootstrapvue_21738461 from 'nuxt_plugin_bootstrapvue_21738461' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_26160f9c from 'nuxt_plugin_axios_26160f9c' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_collectchat_86647268 from 'nuxt_plugin_collectchat_86647268' // Source: ..\\plugins\\collectchat.js (mode: 'client')
-import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ..\\plugins\\ga.js (mode: 'client')
-import nuxt_plugin_vuescrollto_2a1bb871 from 'nuxt_plugin_vuescrollto_2a1bb871' // Source: ..\\plugins\\vue-scrollto.js (mode: 'client')
-import nuxt_plugin_plugin_03b7832e from 'nuxt_plugin_plugin_03b7832e' // Source: ..\\plugins\\plugin.js (mode: 'client')
-import nuxt_plugin_localStorage_830ec59e from 'nuxt_plugin_localStorage_830ec59e' // Source: ..\\plugins\\localStorage.js (mode: 'client')
+import nuxt_plugin_bootstrapvue_08258af6 from 'nuxt_plugin_bootstrapvue_08258af6' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_62eddb54 from 'nuxt_plugin_axios_62eddb54' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_collectchat_86647268 from 'nuxt_plugin_collectchat_86647268' // Source: ../plugins/collectchat.js (mode: 'client')
+import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ../plugins/ga.js (mode: 'client')
+import nuxt_plugin_vuescrollto_2a1bb871 from 'nuxt_plugin_vuescrollto_2a1bb871' // Source: ../plugins/vue-scrollto.js (mode: 'client')
+import nuxt_plugin_plugin_03b7832e from 'nuxt_plugin_plugin_03b7832e' // Source: ../plugins/plugin.js (mode: 'client')
+import nuxt_plugin_localStorage_830ec59e from 'nuxt_plugin_localStorage_830ec59e' // Source: ../plugins/localStorage.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -165,12 +165,12 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_bootstrapvue_21738461 === 'function') {
-    await nuxt_plugin_bootstrapvue_21738461(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_08258af6 === 'function') {
+    await nuxt_plugin_bootstrapvue_08258af6(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_26160f9c === 'function') {
-    await nuxt_plugin_axios_26160f9c(app.context, inject)
+  if (typeof nuxt_plugin_axios_62eddb54 === 'function') {
+    await nuxt_plugin_axios_62eddb54(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_collectchat_86647268 === 'function') {

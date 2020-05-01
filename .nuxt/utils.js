@@ -131,14 +131,14 @@ export async function setContext(app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       store: app.store,
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"shopURL":"https://www.chessa.co.ke/","shopNAME":"Chessa Creations","shopID":"chessa-creations","shopName":"chessa","shopDescription":"Authentic ankara wear for ladies and men.","shopNumber":"786400202","shopEmail":"chessacreations@gmail.com","facebookPage":"https://www.facebook.com/ChessaCreations/","twitterPage":"","instagramPage":""}
+      env: {"shopURL":"https://www.citywalk.co.ke/","shopNAME":"","shopID":"citywalk-limited","shopName":"citywalk limited","shopDescription":"","shopNumber":"0786400202","shopEmail":"davidk@citywalk.co.ke","facebookPage":"https://www.facebook.com/ChessaCreations/","twitterPage":"","instagramPage":""}
     }
     // Only set once
     if (context.req) {
@@ -233,6 +233,9 @@ export function middlewareSeries(promises, appContext) {
 export function promisify(fn, context) {
   let promise
   if (fn.length === 2) {
+      console.warn('Callback-based asyncData, fetch or middleware calls are deprecated. ' +
+        'Please switch to promises or async/await syntax')
+
     // fn(context, callback)
     promise = new Promise((resolve) => {
       fn(context, function (err, data) {
